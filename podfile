@@ -1,0 +1,11 @@
+platform:ios,'8.0'
+target 'TaoBaoShoppingCart' do
+
+pod 'SDWebImage'
+pod 'MJExtension'
+pod 'MJRefresh'
+pod 'SKTagView'
+pod 'UITableView+FDTemplateLayoutCell'
+pod 'Reveal-iOS-SDK', :configurations => ['Debug']
+
+end

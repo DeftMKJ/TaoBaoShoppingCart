@@ -1,0 +1,139 @@
+{
+  "buyers_data" : [
+    {
+      "buyer_id" : "84962",
+      "last_update_ts" : 1473470761,
+      "nick_name" : "晓爷的一双鞋",
+      "prod_list" : [
+        {
+          "cn_price" : 790,
+          "count" : 1,
+          "image" : "http://p3.wmpic.me/article/2016/07/08/1467959558_eOMTgkCd.jpg",
+          "model_detail" : [
+            {
+              "key" : "size",
+              "type_name" : "尺码",
+              "value" : "26.5/42"
+            },
+            {
+              "key" : "color",
+              "type_name" : "颜色",
+              "value" : "绿"
+            }
+          ],
+          "order_price" : 700,
+          "price" : 700,
+          "prod_id" : "1254",
+          "remark" : "",
+          "tax" : 0,
+          "title" : "ASICS 亚瑟士 GEL-Lyte V 复古跑鞋",
+          "trans_fee" : 0
+        }
+      ],
+      "user_avatar" : "http://img3.hao123.com/data/1_f5655149f505585b3ba7d06198c20e79_0"
+    },
+    {
+      "buyer_id" : "84804",
+      "last_update_ts" : 1473470422,
+      "nick_name" : "墨墨数码",
+      "prod_list" : [
+        {
+          "cn_price" : 3479,
+          "count" : 1,
+          "image" : "http://img6.hao123.com/data/1_37b889b48f0c374b9e42826af3ab436f_0",
+          "model_detail" : [],
+          "order_price" : 1099,
+          "price" : 1759,
+          "prod_id" : "222204",
+          "remark" : "",
+          "tax" : 0,
+          "title" : "【备战霾冬】夏普 PM2.5 空气净化加湿器 FU-E51",
+          "trans_fee" : 660
+        },
+        {
+          "cn_price" : 699,
+          "count" : 1,
+          "image" : "http://img1.hao123.com/data/1_9466d6acdcb803c024c2feb4d6183363_510",
+          "model_detail" : [
+            {
+              "key" : "size",
+              "type_name" : "尺码",
+              "value" : "26.5/42"
+            },
+            {
+              "key" : "color",
+              "type_name" : "颜色",
+              "value" : "绿"
+            }
+          ],
+          "order_price" : 458,
+          "price" : 547,
+          "prod_id" : "14477",
+          "remark" : "",
+          "tax" : 0,
+          "title" : "罗技 G700S无线鼠标",
+          "trans_fee" : 89
+        },
+        {
+          "cn_price" : 499,
+          "count" : 1,
+          "image" : "http://img6.hao123.com/data/1_4e2576d9a90b7c9d8003c3a90786d303_510",
+          "model_detail" : [],
+          "order_price" : 239,
+          "price" : 239,
+          "prod_id" : "221545",
+          "remark" : "",
+          "tax" : 0,
+          "title" : "Boogie Board 液晶画板",
+          "trans_fee" : 0
+        }
+      ],
+      "user_avatar" : "http://img6.hao123.com/data/1_7d11f2c4de8de4520645658ead686290_510"
+    },
+    {
+      "buyer_id" : "84793",
+      "last_update_ts" : 1473470290,
+      "nick_name" : "Helen购全球",
+      "prod_list" : [
+        {
+          "cn_price" : 0,
+          "count" : 1,
+          "image" : "http://img2.hao123.com/data/1_c100ff20d887806baf4c0d2e07135cbf_510",
+          "model_detail" : [
+            {
+              "key" : "size",
+              "type_name" : "尺码",
+              "value" : "26.5/42"
+            },
+            {
+              "key" : "color",
+              "type_name" : "颜色",
+              "value" : "绿"
+            }
+          ],
+          "order_price" : 1200,
+          "price" : 1200,
+          "prod_id" : "221690",
+          "remark" : "",
+          "tax" : 0,
+          "title" : "【alice + olivia】Stace Face 面孔人脸兔毛 钥匙链坠饰 包饰",
+          "trans_fee" : 0
+        },
+        {
+          "cn_price" : 0,
+          "count" : 1,
+          "image" : "http://img3.hao123.com/data/1_fe0a3ca7edc68964355d7aca0e759d69_510",
+          "model_detail" : [],
+          "order_price" : 3300,
+          "price" : 3300,
+          "prod_id" : "221147",
+          "remark" : "",
+          "tax" : 0,
+          "title" : "alice + olivia Stace 2016秋冬新款设计师头像面孔方形手提包",
+          "trans_fee" : 0
+        }
+      ],
+      "user_avatar" : "http://u.taowaitao.cn/uploads/avatar/000/08/47/93_avatar_mid.jpg"
+    }
+  ]
+}

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		083FE7D6645FAF54725D8AD0 /* libPods-TaoBaoShoppingCart.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD81E7E64AE47A5A15B3E160 /* libPods-TaoBaoShoppingCart.a */; };
 		B15BE6191D839A000014FBF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B15BE6181D839A000014FBF0 /* main.m */; };
 		B15BE61C1D839A000014FBF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B15BE61B1D839A000014FBF0 /* AppDelegate.m */; };
 		B15BE61F1D839A000014FBF0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B15BE61E1D839A000014FBF0 /* ViewController.m */; };
@@ -15,6 +16,24 @@
 		B15BE6271D839A000014FBF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15BE6251D839A000014FBF0 /* LaunchScreen.storyboard */; };
 		B15BE6321D839A000014FBF0 /* TaoBaoShoppingCartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B15BE6311D839A000014FBF0 /* TaoBaoShoppingCartTests.m */; };
 		B15BE63D1D839A010014FBF0 /* TaoBaoShoppingCartUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B15BE63C1D839A010014FBF0 /* TaoBaoShoppingCartUITests.m */; };
+		B15BE65B1D839CF90014FBF0 /* UIBarButtonItem+WZLBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = B15BE64F1D839CF90014FBF0 /* UIBarButtonItem+WZLBadge.m */; };
+		B15BE65C1D839CF90014FBF0 /* UITabBarItem+WZLBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = B15BE6511D839CF90014FBF0 /* UITabBarItem+WZLBadge.m */; };
+		B15BE65D1D839CF90014FBF0 /* CAAnimation+WAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B15BE6541D839CF90014FBF0 /* CAAnimation+WAnimation.m */; };
+		B15BE65E1D839CF90014FBF0 /* UIView+WZLBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = B15BE6591D839CF90014FBF0 /* UIView+WZLBadge.m */; };
+		B15BE6621D839D3E0014FBF0 /* UIViewController+KNSemiModal.m in Sources */ = {isa = PBXBuildFile; fileRef = B15BE6611D839D3E0014FBF0 /* UIViewController+KNSemiModal.m */; };
+		B15BE6661D839D840014FBF0 /* ChooseGoodsPropertyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B15BE6641D839D840014FBF0 /* ChooseGoodsPropertyViewController.m */; };
+		B15BE6671D839D840014FBF0 /* ChooseGoodsPropertyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B15BE6651D839D840014FBF0 /* ChooseGoodsPropertyViewController.xib */; };
+		B15BE66D1D839D950014FBF0 /* ProductTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B15BE66A1D839D950014FBF0 /* ProductTableViewCell.m */; };
+		B15BE66E1D839D950014FBF0 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B15BE66B1D839D950014FBF0 /* ProductTableViewCell.xib */; };
+		B15BE66F1D839D950014FBF0 /* CountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B15BE66C1D839D950014FBF0 /* CountTableViewCell.xib */; };
+		B15BE6751D83A63A0014FBF0 /* MKJRequestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B15BE6741D83A63A0014FBF0 /* MKJRequestHelper.m */; };
+		B15BE6781D83A9340014FBF0 /* shoppingCartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B15BE6771D83A9340014FBF0 /* shoppingCartModel.m */; };
+		B15BE67C1D83ABC60014FBF0 /* MKJShoppingCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B15BE67A1D83ABC60014FBF0 /* MKJShoppingCartViewController.m */; };
+		B15BE67D1D83ABC60014FBF0 /* MKJShoppingCartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B15BE67B1D83ABC60014FBF0 /* MKJShoppingCartViewController.xib */; };
+		B15BE6811D83D8620014FBF0 /* ShoppingCartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B15BE67F1D83D8620014FBF0 /* ShoppingCartCell.m */; };
+		B15BE6821D83D8620014FBF0 /* ShoppingCartCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B15BE6801D83D8620014FBF0 /* ShoppingCartCell.xib */; };
+		B15BE6C61D83E4FC0014FBF0 /* BuyerHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B15BE6C41D83E4FC0014FBF0 /* BuyerHeaderCell.xib */; };
+		B15BE6C81D8416B90014FBF0 /* shoppingCart.json in Resources */ = {isa = PBXBuildFile; fileRef = B15BE6C71D8416B90014FBF0 /* shoppingCart.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5F3201830543C7A8ECB7BA2B /* Pods-TaoBaoShoppingCart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaoBaoShoppingCart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaoBaoShoppingCart/Pods-TaoBaoShoppingCart.debug.xcconfig"; sourceTree = "<group>"; };
+		AD81E7E64AE47A5A15B3E160 /* libPods-TaoBaoShoppingCart.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TaoBaoShoppingCart.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B15BE6141D839A000014FBF0 /* TaoBaoShoppingCart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaoBaoShoppingCart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B15BE6181D839A000014FBF0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B15BE61A1D839A000014FBF0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +72,38 @@
 		B15BE6381D839A010014FBF0 /* TaoBaoShoppingCartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaoBaoShoppingCartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B15BE63C1D839A010014FBF0 /* TaoBaoShoppingCartUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaoBaoShoppingCartUITests.m; sourceTree = "<group>"; };
 		B15BE63E1D839A010014FBF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B15BE64E1D839CF90014FBF0 /* UIBarButtonItem+WZLBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+WZLBadge.h"; sourceTree = "<group>"; };
+		B15BE64F1D839CF90014FBF0 /* UIBarButtonItem+WZLBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+WZLBadge.m"; sourceTree = "<group>"; };
+		B15BE6501D839CF90014FBF0 /* UITabBarItem+WZLBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarItem+WZLBadge.h"; sourceTree = "<group>"; };
+		B15BE6511D839CF90014FBF0 /* UITabBarItem+WZLBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+WZLBadge.m"; sourceTree = "<group>"; };
+		B15BE6531D839CF90014FBF0 /* CAAnimation+WAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+WAnimation.h"; sourceTree = "<group>"; };
+		B15BE6541D839CF90014FBF0 /* CAAnimation+WAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+WAnimation.m"; sourceTree = "<group>"; };
+		B15BE6561D839CF90014FBF0 /* WZLBadgeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZLBadgeProtocol.h; sourceTree = "<group>"; };
+		B15BE6581D839CF90014FBF0 /* UIView+WZLBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WZLBadge.h"; sourceTree = "<group>"; };
+		B15BE6591D839CF90014FBF0 /* UIView+WZLBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WZLBadge.m"; sourceTree = "<group>"; };
+		B15BE65A1D839CF90014FBF0 /* WZLBadgeImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZLBadgeImport.h; sourceTree = "<group>"; };
+		B15BE6601D839D3E0014FBF0 /* UIViewController+KNSemiModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+KNSemiModal.h"; sourceTree = "<group>"; };
+		B15BE6611D839D3E0014FBF0 /* UIViewController+KNSemiModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+KNSemiModal.m"; sourceTree = "<group>"; };
+		B15BE6631D839D840014FBF0 /* ChooseGoodsPropertyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseGoodsPropertyViewController.h; sourceTree = "<group>"; };
+		B15BE6641D839D840014FBF0 /* ChooseGoodsPropertyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseGoodsPropertyViewController.m; sourceTree = "<group>"; };
+		B15BE6651D839D840014FBF0 /* ChooseGoodsPropertyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChooseGoodsPropertyViewController.xib; sourceTree = "<group>"; };
+		B15BE6691D839D950014FBF0 /* ProductTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductTableViewCell.h; sourceTree = "<group>"; };
+		B15BE66A1D839D950014FBF0 /* ProductTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductTableViewCell.m; sourceTree = "<group>"; };
+		B15BE66B1D839D950014FBF0 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
+		B15BE66C1D839D950014FBF0 /* CountTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountTableViewCell.xib; sourceTree = "<group>"; };
+		B15BE6731D83A63A0014FBF0 /* MKJRequestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKJRequestHelper.h; sourceTree = "<group>"; };
+		B15BE6741D83A63A0014FBF0 /* MKJRequestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKJRequestHelper.m; sourceTree = "<group>"; };
+		B15BE6761D83A9340014FBF0 /* shoppingCartModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shoppingCartModel.h; sourceTree = "<group>"; };
+		B15BE6771D83A9340014FBF0 /* shoppingCartModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shoppingCartModel.m; sourceTree = "<group>"; };
+		B15BE6791D83ABC60014FBF0 /* MKJShoppingCartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKJShoppingCartViewController.h; sourceTree = "<group>"; };
+		B15BE67A1D83ABC60014FBF0 /* MKJShoppingCartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKJShoppingCartViewController.m; sourceTree = "<group>"; };
+		B15BE67B1D83ABC60014FBF0 /* MKJShoppingCartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MKJShoppingCartViewController.xib; sourceTree = "<group>"; };
+		B15BE67E1D83D8620014FBF0 /* ShoppingCartCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingCartCell.h; sourceTree = "<group>"; };
+		B15BE67F1D83D8620014FBF0 /* ShoppingCartCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingCartCell.m; sourceTree = "<group>"; };
+		B15BE6801D83D8620014FBF0 /* ShoppingCartCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShoppingCartCell.xib; sourceTree = "<group>"; };
+		B15BE6C41D83E4FC0014FBF0 /* BuyerHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyerHeaderCell.xib; sourceTree = "<group>"; };
+		B15BE6C71D8416B90014FBF0 /* shoppingCart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = shoppingCart.json; sourceTree = "<group>"; };
+		C3EBE6150C6A86071B158720 /* Pods-TaoBaoShoppingCart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaoBaoShoppingCart.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaoBaoShoppingCart/Pods-TaoBaoShoppingCart.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				083FE7D6645FAF54725D8AD0 /* libPods-TaoBaoShoppingCart.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +132,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F45C9378D12DB6F84E804E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD81E7E64AE47A5A15B3E160 /* libPods-TaoBaoShoppingCart.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76D8D39ACB0174FD9748B535 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F3201830543C7A8ECB7BA2B /* Pods-TaoBaoShoppingCart.debug.xcconfig */,
+				C3EBE6150C6A86071B158720 /* Pods-TaoBaoShoppingCart.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B15BE60B1D839A000014FBF0 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +156,8 @@
 				B15BE6301D839A000014FBF0 /* TaoBaoShoppingCartTests */,
 				B15BE63B1D839A010014FBF0 /* TaoBaoShoppingCartUITests */,
 				B15BE6151D839A000014FBF0 /* Products */,
+				76D8D39ACB0174FD9748B535 /* Pods */,
+				3F45C9378D12DB6F84E804E2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +174,12 @@
 		B15BE6161D839A000014FBF0 /* TaoBaoShoppingCart */ = {
 			isa = PBXGroup;
 			children = (
+				B15BE6721D83A6290014FBF0 /* Model */,
+				B15BE6681D839D8A0014FBF0 /* Cell */,
+				B15BE64B1D839CE50014FBF0 /* tools */,
+				B15BE64A1D839C160014FBF0 /* VC */,
 				B15BE61A1D839A000014FBF0 /* AppDelegate.h */,
 				B15BE61B1D839A000014FBF0 /* AppDelegate.m */,
-				B15BE61D1D839A000014FBF0 /* ViewController.h */,
-				B15BE61E1D839A000014FBF0 /* ViewController.m */,
-				B15BE6201D839A000014FBF0 /* Main.storyboard */,
-				B15BE6231D839A000014FBF0 /* Assets.xcassets */,
-				B15BE6251D839A000014FBF0 /* LaunchScreen.storyboard */,
-				B15BE6281D839A000014FBF0 /* Info.plist */,
 				B15BE6171D839A000014FBF0 /* Supporting Files */,
 			);
 			path = TaoBaoShoppingCart;
@@ -117,6 +188,10 @@
 		B15BE6171D839A000014FBF0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B15BE6C71D8416B90014FBF0 /* shoppingCart.json */,
+				B15BE6231D839A000014FBF0 /* Assets.xcassets */,
+				B15BE6251D839A000014FBF0 /* LaunchScreen.storyboard */,
+				B15BE6281D839A000014FBF0 /* Info.plist */,
 				B15BE6181D839A000014FBF0 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -140,6 +215,115 @@
 			path = TaoBaoShoppingCartUITests;
 			sourceTree = "<group>";
 		};
+		B15BE64A1D839C160014FBF0 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				B15BE6791D83ABC60014FBF0 /* MKJShoppingCartViewController.h */,
+				B15BE67A1D83ABC60014FBF0 /* MKJShoppingCartViewController.m */,
+				B15BE67B1D83ABC60014FBF0 /* MKJShoppingCartViewController.xib */,
+				B15BE6631D839D840014FBF0 /* ChooseGoodsPropertyViewController.h */,
+				B15BE6641D839D840014FBF0 /* ChooseGoodsPropertyViewController.m */,
+				B15BE6651D839D840014FBF0 /* ChooseGoodsPropertyViewController.xib */,
+				B15BE61D1D839A000014FBF0 /* ViewController.h */,
+				B15BE61E1D839A000014FBF0 /* ViewController.m */,
+				B15BE6201D839A000014FBF0 /* Main.storyboard */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		B15BE64B1D839CE50014FBF0 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+				B15BE65F1D839D3E0014FBF0 /* Source */,
+				B15BE64C1D839CF90014FBF0 /* WZLBadge */,
+			);
+			name = tools;
+			sourceTree = "<group>";
+		};
+		B15BE64C1D839CF90014FBF0 /* WZLBadge */ = {
+			isa = PBXGroup;
+			children = (
+				B15BE64D1D839CF90014FBF0 /* BarItem */,
+				B15BE6521D839CF90014FBF0 /* CategorySupport */,
+				B15BE6551D839CF90014FBF0 /* Protocol */,
+				B15BE6571D839CF90014FBF0 /* View */,
+				B15BE65A1D839CF90014FBF0 /* WZLBadgeImport.h */,
+			);
+			path = WZLBadge;
+			sourceTree = "<group>";
+		};
+		B15BE64D1D839CF90014FBF0 /* BarItem */ = {
+			isa = PBXGroup;
+			children = (
+				B15BE64E1D839CF90014FBF0 /* UIBarButtonItem+WZLBadge.h */,
+				B15BE64F1D839CF90014FBF0 /* UIBarButtonItem+WZLBadge.m */,
+				B15BE6501D839CF90014FBF0 /* UITabBarItem+WZLBadge.h */,
+				B15BE6511D839CF90014FBF0 /* UITabBarItem+WZLBadge.m */,
+			);
+			path = BarItem;
+			sourceTree = "<group>";
+		};
+		B15BE6521D839CF90014FBF0 /* CategorySupport */ = {
+			isa = PBXGroup;
+			children = (
+				B15BE6531D839CF90014FBF0 /* CAAnimation+WAnimation.h */,
+				B15BE6541D839CF90014FBF0 /* CAAnimation+WAnimation.m */,
+			);
+			path = CategorySupport;
+			sourceTree = "<group>";
+		};
+		B15BE6551D839CF90014FBF0 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				B15BE6561D839CF90014FBF0 /* WZLBadgeProtocol.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		B15BE6571D839CF90014FBF0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B15BE6581D839CF90014FBF0 /* UIView+WZLBadge.h */,
+				B15BE6591D839CF90014FBF0 /* UIView+WZLBadge.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B15BE65F1D839D3E0014FBF0 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B15BE6601D839D3E0014FBF0 /* UIViewController+KNSemiModal.h */,
+				B15BE6611D839D3E0014FBF0 /* UIViewController+KNSemiModal.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		B15BE6681D839D8A0014FBF0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B15BE6691D839D950014FBF0 /* ProductTableViewCell.h */,
+				B15BE66A1D839D950014FBF0 /* ProductTableViewCell.m */,
+				B15BE66B1D839D950014FBF0 /* ProductTableViewCell.xib */,
+				B15BE66C1D839D950014FBF0 /* CountTableViewCell.xib */,
+				B15BE67E1D83D8620014FBF0 /* ShoppingCartCell.h */,
+				B15BE67F1D83D8620014FBF0 /* ShoppingCartCell.m */,
+				B15BE6801D83D8620014FBF0 /* ShoppingCartCell.xib */,
+				B15BE6C41D83E4FC0014FBF0 /* BuyerHeaderCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		B15BE6721D83A6290014FBF0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B15BE6731D83A63A0014FBF0 /* MKJRequestHelper.h */,
+				B15BE6741D83A63A0014FBF0 /* MKJRequestHelper.m */,
+				B15BE6761D83A9340014FBF0 /* shoppingCartModel.h */,
+				B15BE6771D83A9340014FBF0 /* shoppingCartModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +331,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B15BE6411D839A010014FBF0 /* Build configuration list for PBXNativeTarget "TaoBaoShoppingCart" */;
 			buildPhases = (
+				45C33D420B592DA2660C9591 /* [CP] Check Pods Manifest.lock */,
 				B15BE6101D839A000014FBF0 /* Sources */,
 				B15BE6111D839A000014FBF0 /* Frameworks */,
 				B15BE6121D839A000014FBF0 /* Resources */,
+				AFEAA6FC8CEC1F5862478E15 /* [CP] Embed Pods Frameworks */,
+				2AA8C5A387FFCDD18265697C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,7 +432,14 @@
 			files = (
 				B15BE6271D839A000014FBF0 /* LaunchScreen.storyboard in Resources */,
 				B15BE6241D839A000014FBF0 /* Assets.xcassets in Resources */,
+				B15BE66E1D839D950014FBF0 /* ProductTableViewCell.xib in Resources */,
+				B15BE66F1D839D950014FBF0 /* CountTableViewCell.xib in Resources */,
+				B15BE6C61D83E4FC0014FBF0 /* BuyerHeaderCell.xib in Resources */,
+				B15BE6C81D8416B90014FBF0 /* shoppingCart.json in Resources */,
+				B15BE6821D83D8620014FBF0 /* ShoppingCartCell.xib in Resources */,
 				B15BE6221D839A000014FBF0 /* Main.storyboard in Resources */,
+				B15BE6671D839D840014FBF0 /* ChooseGoodsPropertyViewController.xib in Resources */,
+				B15BE67D1D83ABC60014FBF0 /* MKJShoppingCartViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,14 +459,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2AA8C5A387FFCDD18265697C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TaoBaoShoppingCart/Pods-TaoBaoShoppingCart-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45C33D420B592DA2660C9591 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AFEAA6FC8CEC1F5862478E15 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TaoBaoShoppingCart/Pods-TaoBaoShoppingCart-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B15BE6101D839A000014FBF0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B15BE61F1D839A000014FBF0 /* ViewController.m in Sources */,
+				B15BE6811D83D8620014FBF0 /* ShoppingCartCell.m in Sources */,
+				B15BE6751D83A63A0014FBF0 /* MKJRequestHelper.m in Sources */,
+				B15BE65D1D839CF90014FBF0 /* CAAnimation+WAnimation.m in Sources */,
+				B15BE65E1D839CF90014FBF0 /* UIView+WZLBadge.m in Sources */,
+				B15BE65C1D839CF90014FBF0 /* UITabBarItem+WZLBadge.m in Sources */,
+				B15BE6781D83A9340014FBF0 /* shoppingCartModel.m in Sources */,
 				B15BE61C1D839A000014FBF0 /* AppDelegate.m in Sources */,
+				B15BE6661D839D840014FBF0 /* ChooseGoodsPropertyViewController.m in Sources */,
+				B15BE6621D839D3E0014FBF0 /* UIViewController+KNSemiModal.m in Sources */,
+				B15BE67C1D83ABC60014FBF0 /* MKJShoppingCartViewController.m in Sources */,
+				B15BE65B1D839CF90014FBF0 /* UIBarButtonItem+WZLBadge.m in Sources */,
 				B15BE6191D839A000014FBF0 /* main.m in Sources */,
+				B15BE66D1D839D950014FBF0 /* ProductTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +666,7 @@
 		};
 		B15BE6421D839A010014FBF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F3201830543C7A8ECB7BA2B /* Pods-TaoBaoShoppingCart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TaoBaoShoppingCart/Info.plist;
@@ -424,6 +678,7 @@
 		};
 		B15BE6431D839A010014FBF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3EBE6150C6A86071B158720 /* Pods-TaoBaoShoppingCart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TaoBaoShoppingCart/Info.plist;
@@ -498,6 +753,7 @@
 				B15BE6431D839A010014FBF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B15BE6441D839A010014FBF0 /* Build configuration list for PBXNativeTarget "TaoBaoShoppingCartTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +762,7 @@
 				B15BE6461D839A010014FBF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B15BE6471D839A010014FBF0 /* Build configuration list for PBXNativeTarget "TaoBaoShoppingCartUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +771,7 @@
 				B15BE6491D839A010014FBF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
