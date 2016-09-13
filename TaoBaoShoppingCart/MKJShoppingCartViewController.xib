@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
@@ -12,6 +11,7 @@
                 <outlet property="allSelectedButton" destination="uZz-nB-kUr" id="HyR-CY-Obb"/>
                 <outlet property="bottomDelete" destination="pA3-nK-E2W" id="JQq-dO-dlo"/>
                 <outlet property="bottomView" destination="AF8-wq-Fsh" id="JMA-vu-XMF"/>
+                <outlet property="collectionView" destination="RyU-pU-5lY" id="ePL-xM-chE"/>
                 <outlet property="editBaby" destination="2qb-Ap-Edm" id="2iF-eb-GZQ"/>
                 <outlet property="editBottomRightView" destination="zf5-Cz-pDE" id="Rr8-N6-nAi"/>
                 <outlet property="editBottomRightWidthConstraint" destination="gtu-ca-vuP" id="h5s-fG-khF"/>
@@ -20,6 +20,7 @@
                 <outlet property="storeButton" destination="lq8-DD-wWp" id="Dmh-pL-3uh"/>
                 <outlet property="tableView" destination="gWW-Fy-EU5" id="VGI-Th-NtM"/>
                 <outlet property="totalPriceLabel" destination="OtC-xc-Z6Q" id="IRx-SW-Iat"/>
+                <outlet property="underFooterView" destination="XBc-uW-cCE" id="NHf-hS-MDz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -61,21 +62,23 @@
                     <state key="normal" title="全选" image="checkbox_0">
                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
-                    <state key="selected" image="checkbox_1"/>
+                    <state key="selected" title="全选" image="checkbox_1"/>
+                    <connections>
+                        <action selector="clickAllProductSelected:" destination="-1" eventType="touchUpInside" id="Dis-Ty-Bhe"/>
+                    </connections>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iWu-OF-y6H">
                     <rect key="frame" x="175" y="0.0" width="200" height="50"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZq-Dj-nTG">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZq-Dj-nTG">
                             <rect key="frame" x="133" y="0.0" width="67" height="50"/>
                             <color key="backgroundColor" red="0.75820574659999995" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                            <state key="normal" title="结算">
+                            <state key="normal" title="结算(0)">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                         </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OtC-xc-Z6Q">
-                            <rect key="frame" x="0.0" y="18" width="113" height="14"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OtC-xc-Z6Q">
+                            <rect key="frame" x="0.0" y="25" width="113" height="0.0"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
@@ -96,29 +99,38 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zf5-Cz-pDE">
                     <rect key="frame" x="175" y="0.0" width="200" height="50"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2qb-Ap-Edm">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2qb-Ap-Edm">
                             <rect key="frame" x="0.0" y="0.0" width="66" height="50"/>
                             <color key="backgroundColor" red="0.99607843139999996" green="0.76078431369999999" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <state key="normal" title="分享宝贝">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="share:" destination="-1" eventType="touchUpInside" id="sbU-BH-HQi"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pA3-nK-E2W">
                             <rect key="frame" x="134" y="0.0" width="66" height="50"/>
                             <color key="backgroundColor" red="0.75820574659999995" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                            <state key="normal" title="删除">
+                            <state key="normal" title="多选删除">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="deleteMultipleOrSingfle:" destination="-1" eventType="touchUpInside" id="2WN-gV-KI6"/>
+                            </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lq8-DD-wWp">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lq8-DD-wWp">
                             <rect key="frame" x="67" y="0.0" width="66" height="50"/>
                             <color key="backgroundColor" red="0.99607843139999996" green="0.76078431369999999" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <state key="normal" title="移到收藏夹">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="store:" destination="-1" eventType="touchUpInside" id="yuF-q9-pWh"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -157,7 +169,38 @@
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="196.5" y="391"/>
+            <point key="canvasLocation" x="113.5" y="613"/>
+        </view>
+        <view contentMode="scaleToFill" id="XBc-uW-cCE">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="RyU-pU-5lY">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <inset key="scrollIndicatorInsets" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="8" id="5e5-wv-Apw">
+                        <size key="itemSize" width="170" height="250"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="wVL-od-rGD"/>
+                        <outlet property="delegate" destination="-1" id="ZmV-Ju-VFQ"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="RyU-pU-5lY" firstAttribute="leading" secondItem="XBc-uW-cCE" secondAttribute="leading" id="6Ya-Ea-fHg"/>
+                <constraint firstAttribute="bottom" secondItem="RyU-pU-5lY" secondAttribute="bottom" id="a99-XI-rww"/>
+                <constraint firstItem="RyU-pU-5lY" firstAttribute="top" secondItem="XBc-uW-cCE" secondAttribute="top" id="dyq-aN-MdE"/>
+                <constraint firstAttribute="trailing" secondItem="RyU-pU-5lY" secondAttribute="trailing" id="vOE-IY-FXH"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="237.5" y="171"/>
         </view>
     </objects>
     <resources>

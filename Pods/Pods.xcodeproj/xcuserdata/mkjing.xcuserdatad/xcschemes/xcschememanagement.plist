@@ -4,12 +4,22 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>JTSImageViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MJExtension.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>MJRefresh.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Masonry.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,7 +47,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3656AA64A0741108792E1C5B321E8ED0</key>
+		<key>126EE19B04A36CFC3D1C5E5E57A3185E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>216526CA2F01AA3CEDE8E45F9FB2D052</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>53480ED0BE09FF49E34B1702D485CAAB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,12 +67,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7215357DB78623B42B5F23CC6C80527C</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9B0208495E811E210E00791EB9CC52D6</key>
+		<key>7EDBC06B3D447B9192D12E139BD4ACFE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +77,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AFB9C3F0F2849CAE6662BB4DA83D7175</key>
+		<key>A4C55194929C21C4ADA06F86A04C2BDC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F17236923C85E81B5226CA03D0E8662E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

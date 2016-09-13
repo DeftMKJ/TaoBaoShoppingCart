@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RelatedHeaderCollectionReusableView" id="U6b-Vx-4bR" customClass="RelatedHeaderCollectionReusableView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KEh-X5-xCy">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="puo-dU-v6S">
+                            <rect key="frame" x="138" y="15" width="100" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="i9q-HE-dma"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="猜你喜欢" image="dot1">
+                                <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RzJ-5r-EWp">
+                            <rect key="frame" x="238" y="25" width="137" height="1"/>
+                            <color key="backgroundColor" red="0.84313725490000002" green="0.84313725490000002" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="VUf-vU-m72"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wrf-cK-CUp">
+                            <rect key="frame" x="10" y="25" width="128" height="1"/>
+                            <color key="backgroundColor" red="0.84313725490000002" green="0.84313725490000002" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="PyE-yi-4u2"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="RzJ-5r-EWp" firstAttribute="leading" secondItem="puo-dU-v6S" secondAttribute="trailing" id="HCx-Vh-f6K"/>
+                        <constraint firstAttribute="height" constant="50" id="TzE-QF-iCf"/>
+                        <constraint firstItem="wrf-cK-CUp" firstAttribute="leading" secondItem="KEh-X5-xCy" secondAttribute="leading" constant="10" id="UIZ-bg-6KB"/>
+                        <constraint firstItem="puo-dU-v6S" firstAttribute="centerY" secondItem="KEh-X5-xCy" secondAttribute="centerY" id="bBP-tj-p1Q"/>
+                        <constraint firstItem="puo-dU-v6S" firstAttribute="centerX" secondItem="KEh-X5-xCy" secondAttribute="centerX" id="cqX-3D-XP2"/>
+                        <constraint firstItem="RzJ-5r-EWp" firstAttribute="centerY" secondItem="KEh-X5-xCy" secondAttribute="centerY" id="gAO-2K-7qc"/>
+                        <constraint firstItem="puo-dU-v6S" firstAttribute="centerY" secondItem="KEh-X5-xCy" secondAttribute="centerY" id="iSz-NV-IKE"/>
+                        <constraint firstItem="puo-dU-v6S" firstAttribute="leading" secondItem="wrf-cK-CUp" secondAttribute="trailing" id="jNN-FS-yU6"/>
+                        <constraint firstItem="wrf-cK-CUp" firstAttribute="centerY" secondItem="KEh-X5-xCy" secondAttribute="centerY" id="kuD-Th-Zxq"/>
+                        <constraint firstAttribute="trailing" secondItem="RzJ-5r-EWp" secondAttribute="trailing" id="m4V-PH-zpj"/>
+                        <constraint firstItem="puo-dU-v6S" firstAttribute="centerY" secondItem="KEh-X5-xCy" secondAttribute="centerY" id="oCh-B0-NSF"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="KEh-X5-xCy" secondAttribute="trailing" id="H9P-19-gHq"/>
+                <constraint firstAttribute="bottom" secondItem="KEh-X5-xCy" secondAttribute="bottom" id="Ocd-Ck-ytg"/>
+                <constraint firstItem="KEh-X5-xCy" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="UAG-kF-sdq"/>
+                <constraint firstItem="KEh-X5-xCy" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="uh8-M3-M8x"/>
+            </constraints>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="dot1" width="15" height="15"/>
+    </resources>
+</document>

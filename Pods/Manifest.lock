@@ -1,7 +1,8 @@
 PODS:
+  - JTSImageViewController (1.5.1)
+  - Masonry (1.0.1)
   - MJExtension (3.0.13)
   - MJRefresh (3.1.12)
-  - Reveal-iOS-SDK (1.6.2)
   - SDWebImage (3.8.1):
     - SDWebImage/Core (= 3.8.1)
   - SDWebImage/Core (3.8.1)
@@ -9,21 +10,23 @@ PODS:
   - UITableView+FDTemplateLayoutCell (1.4)
 
 DEPENDENCIES:
+  - JTSImageViewController
+  - Masonry
   - MJExtension
   - MJRefresh
-  - Reveal-iOS-SDK
   - SDWebImage
   - SKTagView
   - UITableView+FDTemplateLayoutCell
 
 SPEC CHECKSUMS:
+  JTSImageViewController: 1f8ce1cc93dab0d0af8e53badeea7528560cfec9
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
-  Reveal-iOS-SDK: e2250b3c155bcfac53ae223ddc1f76d08f206c33
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
   SKTagView: 59cdadcd16e4a09300746ad1811a72371e1327f7
   UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
 
-PODFILE CHECKSUM: 8053ab4aa6590057c6434e90dbe657c1e58c57bb
+PODFILE CHECKSUM: cec195e8ae73af74328b06f25a10e867c091d5f9
 
 COCOAPODS: 1.0.1

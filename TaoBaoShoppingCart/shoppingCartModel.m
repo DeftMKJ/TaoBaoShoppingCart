@@ -19,3 +19,11 @@
 @implementation ModelDeatail
 
 @end
+
+@implementation RelatedProducts
+
+@end
+
+@implementation SingleProduct
+
+@end

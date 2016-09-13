@@ -34,6 +34,11 @@
 		B15BE6821D83D8620014FBF0 /* ShoppingCartCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B15BE6801D83D8620014FBF0 /* ShoppingCartCell.xib */; };
 		B15BE6C61D83E4FC0014FBF0 /* BuyerHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B15BE6C41D83E4FC0014FBF0 /* BuyerHeaderCell.xib */; };
 		B15BE6C81D8416B90014FBF0 /* shoppingCart.json in Resources */ = {isa = PBXBuildFile; fileRef = B15BE6C71D8416B90014FBF0 /* shoppingCart.json */; };
+		B187211A1D879A2200ACF759 /* RelatedProductCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B18721181D879A2200ACF759 /* RelatedProductCollectionViewCell.m */; };
+		B187211B1D879A2200ACF759 /* RelatedProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B18721191D879A2200ACF759 /* RelatedProductCollectionViewCell.xib */; };
+		B187211F1D87A13C00ACF759 /* RelatedHeaderCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B187211D1D87A13C00ACF759 /* RelatedHeaderCollectionReusableView.m */; };
+		B18721201D87A13C00ACF759 /* RelatedHeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B187211E1D87A13C00ACF759 /* RelatedHeaderCollectionReusableView.xib */; };
+		B18721221D87A47400ACF759 /* moreRecommand.json in Resources */ = {isa = PBXBuildFile; fileRef = B18721211D87A47400ACF759 /* moreRecommand.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +108,13 @@
 		B15BE6801D83D8620014FBF0 /* ShoppingCartCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShoppingCartCell.xib; sourceTree = "<group>"; };
 		B15BE6C41D83E4FC0014FBF0 /* BuyerHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyerHeaderCell.xib; sourceTree = "<group>"; };
 		B15BE6C71D8416B90014FBF0 /* shoppingCart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = shoppingCart.json; sourceTree = "<group>"; };
+		B18721171D879A2200ACF759 /* RelatedProductCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelatedProductCollectionViewCell.h; sourceTree = "<group>"; };
+		B18721181D879A2200ACF759 /* RelatedProductCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RelatedProductCollectionViewCell.m; sourceTree = "<group>"; };
+		B18721191D879A2200ACF759 /* RelatedProductCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RelatedProductCollectionViewCell.xib; sourceTree = "<group>"; };
+		B187211C1D87A13C00ACF759 /* RelatedHeaderCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelatedHeaderCollectionReusableView.h; sourceTree = "<group>"; };
+		B187211D1D87A13C00ACF759 /* RelatedHeaderCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RelatedHeaderCollectionReusableView.m; sourceTree = "<group>"; };
+		B187211E1D87A13C00ACF759 /* RelatedHeaderCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RelatedHeaderCollectionReusableView.xib; sourceTree = "<group>"; };
+		B18721211D87A47400ACF759 /* moreRecommand.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = moreRecommand.json; sourceTree = "<group>"; };
 		C3EBE6150C6A86071B158720 /* Pods-TaoBaoShoppingCart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaoBaoShoppingCart.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaoBaoShoppingCart/Pods-TaoBaoShoppingCart.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -188,6 +200,7 @@
 		B15BE6171D839A000014FBF0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B18721211D87A47400ACF759 /* moreRecommand.json */,
 				B15BE6C71D8416B90014FBF0 /* shoppingCart.json */,
 				B15BE6231D839A000014FBF0 /* Assets.xcassets */,
 				B15BE6251D839A000014FBF0 /* LaunchScreen.storyboard */,
@@ -309,6 +322,12 @@
 				B15BE67F1D83D8620014FBF0 /* ShoppingCartCell.m */,
 				B15BE6801D83D8620014FBF0 /* ShoppingCartCell.xib */,
 				B15BE6C41D83E4FC0014FBF0 /* BuyerHeaderCell.xib */,
+				B18721171D879A2200ACF759 /* RelatedProductCollectionViewCell.h */,
+				B18721181D879A2200ACF759 /* RelatedProductCollectionViewCell.m */,
+				B18721191D879A2200ACF759 /* RelatedProductCollectionViewCell.xib */,
+				B187211C1D87A13C00ACF759 /* RelatedHeaderCollectionReusableView.h */,
+				B187211D1D87A13C00ACF759 /* RelatedHeaderCollectionReusableView.m */,
+				B187211E1D87A13C00ACF759 /* RelatedHeaderCollectionReusableView.xib */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -437,8 +456,11 @@
 				B15BE6C61D83E4FC0014FBF0 /* BuyerHeaderCell.xib in Resources */,
 				B15BE6C81D8416B90014FBF0 /* shoppingCart.json in Resources */,
 				B15BE6821D83D8620014FBF0 /* ShoppingCartCell.xib in Resources */,
+				B187211B1D879A2200ACF759 /* RelatedProductCollectionViewCell.xib in Resources */,
 				B15BE6221D839A000014FBF0 /* Main.storyboard in Resources */,
+				B18721221D87A47400ACF759 /* moreRecommand.json in Resources */,
 				B15BE6671D839D840014FBF0 /* ChooseGoodsPropertyViewController.xib in Resources */,
+				B18721201D87A13C00ACF759 /* RelatedHeaderCollectionReusableView.xib in Resources */,
 				B15BE67D1D83ABC60014FBF0 /* MKJShoppingCartViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,10 +538,12 @@
 				B15BE6811D83D8620014FBF0 /* ShoppingCartCell.m in Sources */,
 				B15BE6751D83A63A0014FBF0 /* MKJRequestHelper.m in Sources */,
 				B15BE65D1D839CF90014FBF0 /* CAAnimation+WAnimation.m in Sources */,
+				B187211F1D87A13C00ACF759 /* RelatedHeaderCollectionReusableView.m in Sources */,
 				B15BE65E1D839CF90014FBF0 /* UIView+WZLBadge.m in Sources */,
 				B15BE65C1D839CF90014FBF0 /* UITabBarItem+WZLBadge.m in Sources */,
 				B15BE6781D83A9340014FBF0 /* shoppingCartModel.m in Sources */,
 				B15BE61C1D839A000014FBF0 /* AppDelegate.m in Sources */,
+				B187211A1D879A2200ACF759 /* RelatedProductCollectionViewCell.m in Sources */,
 				B15BE6661D839D840014FBF0 /* ChooseGoodsPropertyViewController.m in Sources */,
 				B15BE6621D839D3E0014FBF0 /* UIViewController+KNSemiModal.m in Sources */,
 				B15BE67C1D83ABC60014FBF0 /* MKJShoppingCartViewController.m in Sources */,
@@ -670,6 +694,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TaoBaoShoppingCart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mikejing.TaoBaoShoppingCart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -682,6 +707,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TaoBaoShoppingCart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mikejing.TaoBaoShoppingCart;
 				PRODUCT_NAME = "$(TARGET_NAME)";

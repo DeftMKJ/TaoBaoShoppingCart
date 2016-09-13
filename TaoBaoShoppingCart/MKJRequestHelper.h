@@ -17,6 +17,8 @@ typedef void(^requestHelperBlock)(id obj,NSError *err);
 
 - (void)requestShoppingCartInfo:(requestHelperBlock)block;
 
+- (void)requestMoreRecommandInfo:(requestHelperBlock)block;
+
 - (BOOL)isEmptyArray:(NSArray *)array;
 
 - (NSAttributedString *)recombinePrice:(CGFloat)CNPrice orderPrice:(CGFloat)unitPrice;

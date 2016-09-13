@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChooseGoodsPropertyViewController">
             <connections>
                 <outlet property="chooseLabel" destination="OHZ-nU-4JS" id="Y3c-eb-ucd"/>
+                <outlet property="confirmButtom" destination="vXT-28-GWz" id="d77-G6-7ml"/>
                 <outlet property="confirmButton" destination="vXT-28-GWz" id="Eqh-pk-xFk"/>
                 <outlet property="imageView" destination="1Xf-7n-W6P" id="rz5-La-e0k"/>
                 <outlet property="priceLabel" destination="ZMk-uT-tJ7" id="Eh3-AD-gWb"/>

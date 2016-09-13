@@ -6,6 +6,7 @@ pod 'MJExtension'
 pod 'MJRefresh'
 pod 'SKTagView'
 pod 'UITableView+FDTemplateLayoutCell'
-pod 'Reveal-iOS-SDK', :configurations => ['Debug']
+pod 'JTSImageViewController'
+pod 'Masonry'
 
 end

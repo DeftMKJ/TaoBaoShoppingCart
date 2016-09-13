@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger,EnterType){
+  
+    FirstEnterType = 0,
+    SecondEnterType
+};
+
 
 typedef void(^callBack)();
 
@@ -16,5 +22,7 @@ typedef void(^callBack)();
 @property (nonatomic,assign) CGFloat price;
 
 @property (nonatomic,copy) callBack block;
+
+@property (nonatomic,assign) EnterType enterType;
 
 @end

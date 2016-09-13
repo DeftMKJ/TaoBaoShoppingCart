@@ -1,0 +1,115 @@
+{
+  "list" : [
+    {
+      "cn_price" : 645,
+      "img" : "http://qingdan.img.taowaitao.cn/image.php?ot=aHR0cDovL2J1eWVyLmltZy5pd2FsYS5uZXQvMjFkZmJmM2RiMThiMjM2My5qcGVn",
+      "order_price" : 399,
+      "price" : 399,
+      "prod_id" : 222552,
+      "tax" : 0,
+      "title" : "Steve Madden Feliz蛇纹绑带高跟鞋",
+      "trans_fee" : 0,
+      "user_id" : "新加坡"
+    },
+    {
+      "cn_price" : 3700,
+      "img" : "http://qingdan.img.taowaitao.cn/image.php?ot=aHR0cDovL2J1eWVyLmltZy5pd2FsYS5uZXQvZmI2YTdkMWEwYjI2ODY1Yy5qcGVn",
+      "order_price" : 1300,
+      "price" : 1400,
+      "prod_id" : 219646,
+      "tax" : 0,
+      "title" : "Michael Kors MK KIRBY大号波士顿水桶包/单肩手提斜挎包",
+      "trans_fee" : 100,
+      "user_id" : "澳大利亚"
+    },
+    {
+      "cn_price" : 2550,
+      "img" : "http://qingdan.img.taowaitao.cn/image.php?ot=aHR0cDovL3R3dC5pbWcuaXdhbGEubmV0L3NrdS81N2M5MzQwZTQxZWIxLnBuZw==",
+      "order_price" : 1250,
+      "price" : 1250,
+      "prod_id" : 221070,
+      "tax" : 0,
+      "title" : "Swarovski施华洛世奇 手镯套装",
+      "trans_fee" : 0,
+      "user_id" : "华盛顿"
+    },
+    {
+      "cn_price" : 289,
+      "img" : "http://qingdan.img.taowaitao.cn/image.php?ot=aHR0cDovL2J1eWVyLmltZy5pd2FsYS5uZXQvOTY5Zjk3OTQ0MThlZGM0My5wbmc=",
+      "order_price" : 190,
+      "price" : 239,
+      "prod_id" : 222061,
+      "tax" : 0,
+      "title" : "Jellycat Bashful Monkey - Medium 31cm",
+      "trans_fee" : 49,
+      "user_id" : "斯里兰卡"
+    },
+    {
+      "cn_price" : 890,
+      "img" : "http://qingdan.img.taowaitao.cn/image.php?ot=aHR0cDovL2J1eWVyLmltZy5pd2FsYS5uZXQvYjIxOTI0NDdiODA5ZDYzOC5qcGVn",
+      "order_price" : 699,
+      "price" : 749,
+      "prod_id" : 222477,
+      "tax" : 0,
+      "title" : "Juicy Couture 橘滋时尚精致心形锁饰奥贝尔石心型链条手链",
+      "trans_fee" : 50,
+      "user_id" : "卡西莫多的礼物"
+    },
+    {
+      "cn_price" : 1280,
+      "img" : "http://qingdan.img.taowaitao.cn/image.php?ot=aHR0cDovL2J1eWVyLmltZy5pd2FsYS5uZXQvYWIxYjUyZGUzN2M4MjZiOC5qcGVn",
+      "order_price" : 588,
+      "price" : 688,
+      "prod_id" : 222267,
+      "tax" : 0,
+      "title" : "玖熙NINE WEST PHONA POINTY TOE PUMPS高跟凉鞋",
+      "trans_fee" : 100,
+      "user_id" : "血羽奎因"
+    },
+    {
+      "cn_price" : 280,
+      "img" : "http://qingdan.img.taowaitao.cn/image.php?ot=aHR0cDovL2J1eWVyLmltZy5pd2FsYS5uZXQvYmE3MTdhMjkxODhhMGU1NS5qcGVn",
+      "order_price" : 105,
+      "price" : 170,
+      "prod_id" : 221940,
+      "tax" : 20,
+      "title" : "Club 出浴素颜保湿蜜粉饼 保湿遮瑕 26g （蓝粉）",
+      "trans_fee" : 45,
+      "user_id" : "热带雨林兰博"
+    },
+    {
+      "cn_price" : 1299,
+      "img" : "http://qingdan.img.taowaitao.cn/image.php?ot=aHR0cDovL3R3dC5pbWcuaXdhbGEubmV0L3NrdS81N2NlOWNkNzg5NWZiLnBuZw==",
+      "order_price" : 650,
+      "price" : 730,
+      "prod_id" : 221623,
+      "tax" : 0,
+      "title" : "【日本最火】pour-A-soigne Aqua Queana Clean Platinum S 超声波毛孔清洁美容仪 ",
+      "trans_fee" : 80,
+      "user_id" : "日本"
+    },
+    {
+      "cn_price" : 650,
+      "img" : "http://qingdan.img.taowaitao.cn/image.php?ot=aHR0cDovL2J1eWVyLmltZy5pd2FsYS5uZXQvMzAxNTI2OGQxYzZkNWRiZS5qcGVn",
+      "order_price" : 485,
+      "price" : 535,
+      "prod_id" : 222217,
+      "tax" : 0,
+      "title" : "Juicy Couture 橘滋个性设计心形浪漫女士钥匙扣",
+      "trans_fee" : 50,
+      "user_id" : "法国"
+    },
+    {
+      "cn_price" : 890,
+      "img" : "http://qingdan.img.taowaitao.cn/image.php?ot=aHR0cDovL2J1eWVyLmltZy5pd2FsYS5uZXQvMjUzNTYyNGU5YmNmMTZkOS5qcGVn",
+      "order_price" : 699,
+      "price" : 749,
+      "prod_id" : 222476,
+      "tax" : 0,
+      "title" : "Juicy Couture 橘滋永恒的爱系列挂坠手链前卫时尚设计手饰",
+      "trans_fee" : 50,
+      "user_id" : "纽约"
+    }
+  ],
+  "share_url" : "http://m.taowaitao.cn/index/app/today"
+}

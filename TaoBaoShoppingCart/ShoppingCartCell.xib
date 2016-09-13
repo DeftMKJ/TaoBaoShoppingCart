@@ -62,17 +62,21 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2jU-CY-OIu">
                         <rect key="frame" x="128" y="10" width="239" height="80"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRL-3y-oox">
+                            <button opaque="NO" tag="555" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRL-3y-oox">
                                 <rect key="frame" x="0.0" y="0.0" width="30" height="50"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="aZp-uU-avj"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="z8N-Vx-0jj"/>
                                 </constraints>
                                 <state key="normal" image="count_min_0"/>
+                                <connections>
+                                    <action selector="plusOrMinus:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="DfP-tc-AQ5"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwr-fi-nlm">
                                 <rect key="frame" x="30" y="0.0" width="120" height="50"/>
+                                <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="dg2-tL-v75"/>
                                 </constraints>
@@ -80,15 +84,19 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ss-LC-yf5">
+                            <button opaque="NO" tag="666" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ss-LC-yf5">
                                 <rect key="frame" x="150" y="0.0" width="30" height="50"/>
+                                <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="3gC-ah-Xih"/>
                                 </constraints>
                                 <state key="normal" image="count_plus_0"/>
+                                <connections>
+                                    <action selector="plusOrMinus:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="B28-Yf-fi6"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wqw-Mj-gce">
-                                <rect key="frame" x="0.0" y="50" width="180" height="30"/>
+                                <rect key="frame" x="0.0" y="50" width="170" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssc-jL-sXb">
                                         <rect key="frame" x="0.0" y="7" width="33" height="16"/>
@@ -97,7 +105,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downArrow" translatesAutoresizingMaskIntoConstraints="NO" id="Uhy-A6-ID1">
-                                        <rect key="frame" x="168" y="12" width="12" height="7"/>
+                                        <rect key="frame" x="158" y="12" width="12" height="7"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="12" id="iJA-rC-wde"/>
+                                        </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -111,7 +122,11 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PtA-ek-oWe">
                                 <rect key="frame" x="180" y="0.0" width="59" height="80"/>
+                                <color key="backgroundColor" red="0.84783976510000003" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="delete"/>
+                                <connections>
+                                    <action selector="clickGarbage:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="VZl-DB-cG0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -131,7 +146,7 @@
                             <constraint firstItem="SRL-3y-oox" firstAttribute="width" secondItem="2jU-CY-OIu" secondAttribute="width" multiplier="1:8" id="hkz-nn-wiC"/>
                             <constraint firstItem="Wqw-Mj-gce" firstAttribute="top" secondItem="3Ss-LC-yf5" secondAttribute="bottom" id="oq3-2m-MJO"/>
                             <constraint firstItem="3Ss-LC-yf5" firstAttribute="leading" secondItem="zwr-fi-nlm" secondAttribute="trailing" id="oqE-Z6-lgU"/>
-                            <constraint firstItem="PtA-ek-oWe" firstAttribute="leading" secondItem="Uhy-A6-ID1" secondAttribute="trailing" id="uiX-Vt-KQl"/>
+                            <constraint firstItem="PtA-ek-oWe" firstAttribute="leading" secondItem="Uhy-A6-ID1" secondAttribute="trailing" constant="10" id="uiX-Vt-KQl"/>
                             <constraint firstAttribute="trailing" secondItem="PtA-ek-oWe" secondAttribute="trailing" id="yqp-xE-cB6"/>
                         </constraints>
                     </view>
@@ -142,6 +157,9 @@
                         </constraints>
                         <state key="normal" image="checkbox_0"/>
                         <state key="selected" image="checkbox_1"/>
+                        <connections>
+                            <action selector="clickSelected:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="sIe-kf-Np6"/>
+                        </connections>
                     </button>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fFF-n7-lvL">
                         <rect key="frame" x="40" y="10" width="80" height="80"/>

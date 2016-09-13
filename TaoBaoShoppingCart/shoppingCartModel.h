@@ -16,7 +16,7 @@
 @property (nonatomic,copy) NSString *last_update_ts;
 @property (nonatomic,copy) NSString *nick_name;
 @property (nonatomic,copy) NSString *user_avatar;
-@property (nonatomic,strong) NSArray *prod_list;
+@property (nonatomic,strong) NSMutableArray *prod_list;
 
 // 买手左侧按钮是否选中
 @property (nonatomic,assign) BOOL buyerIsChoosed;
@@ -52,3 +52,31 @@
 @property (nonatomic,copy) NSString *value;
 
 @end
+
+
+@interface RelatedProducts : NSObject
+
+@property (nonatomic,strong) NSArray *list;
+
+@end
+
+
+@interface SingleProduct : NSObject
+
+@property (nonatomic,copy) NSString *img;
+@property (nonatomic,copy) NSString * title;
+@property (nonatomic,assign) CGFloat order_price;
+@property (nonatomic,assign) CGFloat cn_price;
+@property (nonatomic,copy) NSString *user_id;
+
+@end
+
+
+
+
+
+
+
+
+
+

@@ -22,6 +22,8 @@
 
 @property (nonatomic,assign) NSInteger idx1;
 @property (nonatomic,assign) NSInteger idx2;
+
+@property (weak, nonatomic) IBOutlet UIButton *confirmButtom;
 @end
 
 
@@ -33,6 +35,14 @@ static NSString *identyfy2 = @"CountTableViewCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    if (self.enterType == FirstEnterType) {
+        [self.confirmButtom setTitle:@"去购物车" forState:UIControlStateNormal];
+    }
+    else
+    {
+        [self.confirmButtom setTitle:@"确定" forState:UIControlStateNormal];
+    }
     
     self.imageView.layer.cornerRadius = 5.0f;
     self.imageView.clipsToBounds = YES;
@@ -69,7 +79,12 @@ static NSString *identyfy2 = @"CountTableViewCell";
     if ([parent respondsToSelector:@selector(dismissSemiModalView)]) {
         [parent dismissSemiModalView];
     }
-    self.block();
+    if (self.enterType == FirstEnterType)
+    {
+        self.block();
+    }
+    
+    
 
 }
 

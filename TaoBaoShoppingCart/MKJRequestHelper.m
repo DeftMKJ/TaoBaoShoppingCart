@@ -40,6 +40,7 @@ static id _requestHelp;
     return _requestHelp;
 }
 
+
 - (void)requestShoppingCartInfo:(requestHelperBlock)block
 {
     NSString *path = [[NSBundle mainBundle] pathForResource:@"shoppingCart" ofType:@"json"];
@@ -59,6 +60,19 @@ static id _requestHelp;
     
     NSMutableArray *buyerLists = [BuyerInfo mj_objectArrayWithKeyValuesArray:shoppingDic[@"buyers_data"]];
     block(buyerLists,nil);
+}
+
+
+- (void)requestMoreRecommandInfo:(requestHelperBlock)block
+{
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"moreRecommand" ofType:@"json"];
+    NSString *relatedStr = [NSString stringWithContentsOfFile:path usedEncoding:nil error:nil];
+    NSDictionary *relatedDic = [relatedStr mj_JSONObject];
+    [RelatedProducts mj_setupObjectClassInArray:^NSDictionary *{
+        return @{@"list":@"SingleProduct"};
+    }];
+    RelatedProducts *products = [RelatedProducts mj_objectWithKeyValues:relatedDic];
+    block(products.list,nil);
 }
 
 
