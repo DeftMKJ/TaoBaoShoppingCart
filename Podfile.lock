@@ -7,7 +7,7 @@ PODS:
     - SDWebImage/Core (= 3.8.1)
   - SDWebImage/Core (3.8.1)
   - SKTagView (0.9.2)
-  - UITableView+FDTemplateLayoutCell (1.4)
+  - UITableView+FDTemplateLayoutCell (1.6)
 
 DEPENDENCIES:
   - JTSImageViewController
@@ -25,8 +25,8 @@ SPEC CHECKSUMS:
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
   SKTagView: 59cdadcd16e4a09300746ad1811a72371e1327f7
-  UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
+  UITableView+FDTemplateLayoutCell: 5c949b4a5059c404b442926c0e80f81d10a2d66f
 
-PODFILE CHECKSUM: cec195e8ae73af74328b06f25a10e867c091d5f9
+PODFILE CHECKSUM: 6fa5bd847688a05accb014fedd390120d9f2887f
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.1.1

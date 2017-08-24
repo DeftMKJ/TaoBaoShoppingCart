@@ -5,8 +5,8 @@ pod 'SDWebImage'
 pod 'MJExtension'
 pod 'MJRefresh'
 pod 'SKTagView'
-pod 'UITableView+FDTemplateLayoutCell'
 pod 'JTSImageViewController'
 pod 'Masonry'
 
+pod 'UITableView+FDTemplateLayoutCell'
 end

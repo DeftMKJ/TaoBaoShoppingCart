@@ -1,805 +1,2029 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		083FE7D6645FAF54725D8AD0 /* libPods-TaoBaoShoppingCart.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD81E7E64AE47A5A15B3E160 /* libPods-TaoBaoShoppingCart.a */; };
-		B15BE6191D839A000014FBF0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B15BE6181D839A000014FBF0 /* main.m */; };
-		B15BE61C1D839A000014FBF0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B15BE61B1D839A000014FBF0 /* AppDelegate.m */; };
-		B15BE61F1D839A000014FBF0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B15BE61E1D839A000014FBF0 /* ViewController.m */; };
-		B15BE6221D839A000014FBF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15BE6201D839A000014FBF0 /* Main.storyboard */; };
-		B15BE6241D839A000014FBF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B15BE6231D839A000014FBF0 /* Assets.xcassets */; };
-		B15BE6271D839A000014FBF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B15BE6251D839A000014FBF0 /* LaunchScreen.storyboard */; };
-		B15BE6321D839A000014FBF0 /* TaoBaoShoppingCartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B15BE6311D839A000014FBF0 /* TaoBaoShoppingCartTests.m */; };
-		B15BE63D1D839A010014FBF0 /* TaoBaoShoppingCartUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B15BE63C1D839A010014FBF0 /* TaoBaoShoppingCartUITests.m */; };
-		B15BE65B1D839CF90014FBF0 /* UIBarButtonItem+WZLBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = B15BE64F1D839CF90014FBF0 /* UIBarButtonItem+WZLBadge.m */; };
-		B15BE65C1D839CF90014FBF0 /* UITabBarItem+WZLBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = B15BE6511D839CF90014FBF0 /* UITabBarItem+WZLBadge.m */; };
-		B15BE65D1D839CF90014FBF0 /* CAAnimation+WAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B15BE6541D839CF90014FBF0 /* CAAnimation+WAnimation.m */; };
-		B15BE65E1D839CF90014FBF0 /* UIView+WZLBadge.m in Sources */ = {isa = PBXBuildFile; fileRef = B15BE6591D839CF90014FBF0 /* UIView+WZLBadge.m */; };
-		B15BE6621D839D3E0014FBF0 /* UIViewController+KNSemiModal.m in Sources */ = {isa = PBXBuildFile; fileRef = B15BE6611D839D3E0014FBF0 /* UIViewController+KNSemiModal.m */; };
-		B15BE6661D839D840014FBF0 /* ChooseGoodsPropertyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B15BE6641D839D840014FBF0 /* ChooseGoodsPropertyViewController.m */; };
-		B15BE6671D839D840014FBF0 /* ChooseGoodsPropertyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B15BE6651D839D840014FBF0 /* ChooseGoodsPropertyViewController.xib */; };
-		B15BE66D1D839D950014FBF0 /* ProductTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B15BE66A1D839D950014FBF0 /* ProductTableViewCell.m */; };
-		B15BE66E1D839D950014FBF0 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B15BE66B1D839D950014FBF0 /* ProductTableViewCell.xib */; };
-		B15BE66F1D839D950014FBF0 /* CountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B15BE66C1D839D950014FBF0 /* CountTableViewCell.xib */; };
-		B15BE6751D83A63A0014FBF0 /* MKJRequestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B15BE6741D83A63A0014FBF0 /* MKJRequestHelper.m */; };
-		B15BE6781D83A9340014FBF0 /* shoppingCartModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B15BE6771D83A9340014FBF0 /* shoppingCartModel.m */; };
-		B15BE67C1D83ABC60014FBF0 /* MKJShoppingCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B15BE67A1D83ABC60014FBF0 /* MKJShoppingCartViewController.m */; };
-		B15BE67D1D83ABC60014FBF0 /* MKJShoppingCartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B15BE67B1D83ABC60014FBF0 /* MKJShoppingCartViewController.xib */; };
-		B15BE6811D83D8620014FBF0 /* ShoppingCartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B15BE67F1D83D8620014FBF0 /* ShoppingCartCell.m */; };
-		B15BE6821D83D8620014FBF0 /* ShoppingCartCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B15BE6801D83D8620014FBF0 /* ShoppingCartCell.xib */; };
-		B15BE6C61D83E4FC0014FBF0 /* BuyerHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B15BE6C41D83E4FC0014FBF0 /* BuyerHeaderCell.xib */; };
-		B15BE6C81D8416B90014FBF0 /* shoppingCart.json in Resources */ = {isa = PBXBuildFile; fileRef = B15BE6C71D8416B90014FBF0 /* shoppingCart.json */; };
-		B187211A1D879A2200ACF759 /* RelatedProductCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B18721181D879A2200ACF759 /* RelatedProductCollectionViewCell.m */; };
-		B187211B1D879A2200ACF759 /* RelatedProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B18721191D879A2200ACF759 /* RelatedProductCollectionViewCell.xib */; };
-		B187211F1D87A13C00ACF759 /* RelatedHeaderCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B187211D1D87A13C00ACF759 /* RelatedHeaderCollectionReusableView.m */; };
-		B18721201D87A13C00ACF759 /* RelatedHeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B187211E1D87A13C00ACF759 /* RelatedHeaderCollectionReusableView.xib */; };
-		B18721221D87A47400ACF759 /* moreRecommand.json in Resources */ = {isa = PBXBuildFile; fileRef = B18721211D87A47400ACF759 /* moreRecommand.json */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		B15BE62E1D839A000014FBF0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B15BE60C1D839A000014FBF0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B15BE6131D839A000014FBF0;
-			remoteInfo = TaoBaoShoppingCart;
-		};
-		B15BE6391D839A010014FBF0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B15BE60C1D839A000014FBF0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B15BE6131D839A000014FBF0;
-			remoteInfo = TaoBaoShoppingCart;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		5F3201830543C7A8ECB7BA2B /* Pods-TaoBaoShoppingCart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaoBaoShoppingCart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaoBaoShoppingCart/Pods-TaoBaoShoppingCart.debug.xcconfig"; sourceTree = "<group>"; };
-		AD81E7E64AE47A5A15B3E160 /* libPods-TaoBaoShoppingCart.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TaoBaoShoppingCart.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B15BE6141D839A000014FBF0 /* TaoBaoShoppingCart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaoBaoShoppingCart.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B15BE6181D839A000014FBF0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B15BE61A1D839A000014FBF0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		B15BE61B1D839A000014FBF0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B15BE61D1D839A000014FBF0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B15BE61E1D839A000014FBF0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B15BE6211D839A000014FBF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B15BE6231D839A000014FBF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B15BE6261D839A000014FBF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B15BE6281D839A000014FBF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B15BE62D1D839A000014FBF0 /* TaoBaoShoppingCartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaoBaoShoppingCartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B15BE6311D839A000014FBF0 /* TaoBaoShoppingCartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaoBaoShoppingCartTests.m; sourceTree = "<group>"; };
-		B15BE6331D839A000014FBF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B15BE6381D839A010014FBF0 /* TaoBaoShoppingCartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaoBaoShoppingCartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B15BE63C1D839A010014FBF0 /* TaoBaoShoppingCartUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TaoBaoShoppingCartUITests.m; sourceTree = "<group>"; };
-		B15BE63E1D839A010014FBF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B15BE64E1D839CF90014FBF0 /* UIBarButtonItem+WZLBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+WZLBadge.h"; sourceTree = "<group>"; };
-		B15BE64F1D839CF90014FBF0 /* UIBarButtonItem+WZLBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+WZLBadge.m"; sourceTree = "<group>"; };
-		B15BE6501D839CF90014FBF0 /* UITabBarItem+WZLBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarItem+WZLBadge.h"; sourceTree = "<group>"; };
-		B15BE6511D839CF90014FBF0 /* UITabBarItem+WZLBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+WZLBadge.m"; sourceTree = "<group>"; };
-		B15BE6531D839CF90014FBF0 /* CAAnimation+WAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+WAnimation.h"; sourceTree = "<group>"; };
-		B15BE6541D839CF90014FBF0 /* CAAnimation+WAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+WAnimation.m"; sourceTree = "<group>"; };
-		B15BE6561D839CF90014FBF0 /* WZLBadgeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZLBadgeProtocol.h; sourceTree = "<group>"; };
-		B15BE6581D839CF90014FBF0 /* UIView+WZLBadge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WZLBadge.h"; sourceTree = "<group>"; };
-		B15BE6591D839CF90014FBF0 /* UIView+WZLBadge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WZLBadge.m"; sourceTree = "<group>"; };
-		B15BE65A1D839CF90014FBF0 /* WZLBadgeImport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZLBadgeImport.h; sourceTree = "<group>"; };
-		B15BE6601D839D3E0014FBF0 /* UIViewController+KNSemiModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+KNSemiModal.h"; sourceTree = "<group>"; };
-		B15BE6611D839D3E0014FBF0 /* UIViewController+KNSemiModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+KNSemiModal.m"; sourceTree = "<group>"; };
-		B15BE6631D839D840014FBF0 /* ChooseGoodsPropertyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseGoodsPropertyViewController.h; sourceTree = "<group>"; };
-		B15BE6641D839D840014FBF0 /* ChooseGoodsPropertyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseGoodsPropertyViewController.m; sourceTree = "<group>"; };
-		B15BE6651D839D840014FBF0 /* ChooseGoodsPropertyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChooseGoodsPropertyViewController.xib; sourceTree = "<group>"; };
-		B15BE6691D839D950014FBF0 /* ProductTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductTableViewCell.h; sourceTree = "<group>"; };
-		B15BE66A1D839D950014FBF0 /* ProductTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductTableViewCell.m; sourceTree = "<group>"; };
-		B15BE66B1D839D950014FBF0 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
-		B15BE66C1D839D950014FBF0 /* CountTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountTableViewCell.xib; sourceTree = "<group>"; };
-		B15BE6731D83A63A0014FBF0 /* MKJRequestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKJRequestHelper.h; sourceTree = "<group>"; };
-		B15BE6741D83A63A0014FBF0 /* MKJRequestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKJRequestHelper.m; sourceTree = "<group>"; };
-		B15BE6761D83A9340014FBF0 /* shoppingCartModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shoppingCartModel.h; sourceTree = "<group>"; };
-		B15BE6771D83A9340014FBF0 /* shoppingCartModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shoppingCartModel.m; sourceTree = "<group>"; };
-		B15BE6791D83ABC60014FBF0 /* MKJShoppingCartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKJShoppingCartViewController.h; sourceTree = "<group>"; };
-		B15BE67A1D83ABC60014FBF0 /* MKJShoppingCartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKJShoppingCartViewController.m; sourceTree = "<group>"; };
-		B15BE67B1D83ABC60014FBF0 /* MKJShoppingCartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MKJShoppingCartViewController.xib; sourceTree = "<group>"; };
-		B15BE67E1D83D8620014FBF0 /* ShoppingCartCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingCartCell.h; sourceTree = "<group>"; };
-		B15BE67F1D83D8620014FBF0 /* ShoppingCartCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingCartCell.m; sourceTree = "<group>"; };
-		B15BE6801D83D8620014FBF0 /* ShoppingCartCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShoppingCartCell.xib; sourceTree = "<group>"; };
-		B15BE6C41D83E4FC0014FBF0 /* BuyerHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyerHeaderCell.xib; sourceTree = "<group>"; };
-		B15BE6C71D8416B90014FBF0 /* shoppingCart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = shoppingCart.json; sourceTree = "<group>"; };
-		B18721171D879A2200ACF759 /* RelatedProductCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelatedProductCollectionViewCell.h; sourceTree = "<group>"; };
-		B18721181D879A2200ACF759 /* RelatedProductCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RelatedProductCollectionViewCell.m; sourceTree = "<group>"; };
-		B18721191D879A2200ACF759 /* RelatedProductCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RelatedProductCollectionViewCell.xib; sourceTree = "<group>"; };
-		B187211C1D87A13C00ACF759 /* RelatedHeaderCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelatedHeaderCollectionReusableView.h; sourceTree = "<group>"; };
-		B187211D1D87A13C00ACF759 /* RelatedHeaderCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RelatedHeaderCollectionReusableView.m; sourceTree = "<group>"; };
-		B187211E1D87A13C00ACF759 /* RelatedHeaderCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RelatedHeaderCollectionReusableView.xib; sourceTree = "<group>"; };
-		B18721211D87A47400ACF759 /* moreRecommand.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = moreRecommand.json; sourceTree = "<group>"; };
-		C3EBE6150C6A86071B158720 /* Pods-TaoBaoShoppingCart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaoBaoShoppingCart.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaoBaoShoppingCart/Pods-TaoBaoShoppingCart.release.xcconfig"; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		B15BE6111D839A000014FBF0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				083FE7D6645FAF54725D8AD0 /* libPods-TaoBaoShoppingCart.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B15BE62A1D839A000014FBF0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B15BE6351D839A010014FBF0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		3F45C9378D12DB6F84E804E2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				AD81E7E64AE47A5A15B3E160 /* libPods-TaoBaoShoppingCart.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		76D8D39ACB0174FD9748B535 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5F3201830543C7A8ECB7BA2B /* Pods-TaoBaoShoppingCart.debug.xcconfig */,
-				C3EBE6150C6A86071B158720 /* Pods-TaoBaoShoppingCart.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		B15BE60B1D839A000014FBF0 = {
-			isa = PBXGroup;
-			children = (
-				B15BE6161D839A000014FBF0 /* TaoBaoShoppingCart */,
-				B15BE6301D839A000014FBF0 /* TaoBaoShoppingCartTests */,
-				B15BE63B1D839A010014FBF0 /* TaoBaoShoppingCartUITests */,
-				B15BE6151D839A000014FBF0 /* Products */,
-				76D8D39ACB0174FD9748B535 /* Pods */,
-				3F45C9378D12DB6F84E804E2 /* Frameworks */,
-			);
-			sourceTree = "<group>";
-		};
-		B15BE6151D839A000014FBF0 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B15BE6141D839A000014FBF0 /* TaoBaoShoppingCart.app */,
-				B15BE62D1D839A000014FBF0 /* TaoBaoShoppingCartTests.xctest */,
-				B15BE6381D839A010014FBF0 /* TaoBaoShoppingCartUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		B15BE6161D839A000014FBF0 /* TaoBaoShoppingCart */ = {
-			isa = PBXGroup;
-			children = (
-				B15BE6721D83A6290014FBF0 /* Model */,
-				B15BE6681D839D8A0014FBF0 /* Cell */,
-				B15BE64B1D839CE50014FBF0 /* tools */,
-				B15BE64A1D839C160014FBF0 /* VC */,
-				B15BE61A1D839A000014FBF0 /* AppDelegate.h */,
-				B15BE61B1D839A000014FBF0 /* AppDelegate.m */,
-				B15BE6171D839A000014FBF0 /* Supporting Files */,
-			);
-			path = TaoBaoShoppingCart;
-			sourceTree = "<group>";
-		};
-		B15BE6171D839A000014FBF0 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B18721211D87A47400ACF759 /* moreRecommand.json */,
-				B15BE6C71D8416B90014FBF0 /* shoppingCart.json */,
-				B15BE6231D839A000014FBF0 /* Assets.xcassets */,
-				B15BE6251D839A000014FBF0 /* LaunchScreen.storyboard */,
-				B15BE6281D839A000014FBF0 /* Info.plist */,
-				B15BE6181D839A000014FBF0 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B15BE6301D839A000014FBF0 /* TaoBaoShoppingCartTests */ = {
-			isa = PBXGroup;
-			children = (
-				B15BE6311D839A000014FBF0 /* TaoBaoShoppingCartTests.m */,
-				B15BE6331D839A000014FBF0 /* Info.plist */,
-			);
-			path = TaoBaoShoppingCartTests;
-			sourceTree = "<group>";
-		};
-		B15BE63B1D839A010014FBF0 /* TaoBaoShoppingCartUITests */ = {
-			isa = PBXGroup;
-			children = (
-				B15BE63C1D839A010014FBF0 /* TaoBaoShoppingCartUITests.m */,
-				B15BE63E1D839A010014FBF0 /* Info.plist */,
-			);
-			path = TaoBaoShoppingCartUITests;
-			sourceTree = "<group>";
-		};
-		B15BE64A1D839C160014FBF0 /* VC */ = {
-			isa = PBXGroup;
-			children = (
-				B15BE6791D83ABC60014FBF0 /* MKJShoppingCartViewController.h */,
-				B15BE67A1D83ABC60014FBF0 /* MKJShoppingCartViewController.m */,
-				B15BE67B1D83ABC60014FBF0 /* MKJShoppingCartViewController.xib */,
-				B15BE6631D839D840014FBF0 /* ChooseGoodsPropertyViewController.h */,
-				B15BE6641D839D840014FBF0 /* ChooseGoodsPropertyViewController.m */,
-				B15BE6651D839D840014FBF0 /* ChooseGoodsPropertyViewController.xib */,
-				B15BE61D1D839A000014FBF0 /* ViewController.h */,
-				B15BE61E1D839A000014FBF0 /* ViewController.m */,
-				B15BE6201D839A000014FBF0 /* Main.storyboard */,
-			);
-			name = VC;
-			sourceTree = "<group>";
-		};
-		B15BE64B1D839CE50014FBF0 /* tools */ = {
-			isa = PBXGroup;
-			children = (
-				B15BE65F1D839D3E0014FBF0 /* Source */,
-				B15BE64C1D839CF90014FBF0 /* WZLBadge */,
-			);
-			name = tools;
-			sourceTree = "<group>";
-		};
-		B15BE64C1D839CF90014FBF0 /* WZLBadge */ = {
-			isa = PBXGroup;
-			children = (
-				B15BE64D1D839CF90014FBF0 /* BarItem */,
-				B15BE6521D839CF90014FBF0 /* CategorySupport */,
-				B15BE6551D839CF90014FBF0 /* Protocol */,
-				B15BE6571D839CF90014FBF0 /* View */,
-				B15BE65A1D839CF90014FBF0 /* WZLBadgeImport.h */,
-			);
-			path = WZLBadge;
-			sourceTree = "<group>";
-		};
-		B15BE64D1D839CF90014FBF0 /* BarItem */ = {
-			isa = PBXGroup;
-			children = (
-				B15BE64E1D839CF90014FBF0 /* UIBarButtonItem+WZLBadge.h */,
-				B15BE64F1D839CF90014FBF0 /* UIBarButtonItem+WZLBadge.m */,
-				B15BE6501D839CF90014FBF0 /* UITabBarItem+WZLBadge.h */,
-				B15BE6511D839CF90014FBF0 /* UITabBarItem+WZLBadge.m */,
-			);
-			path = BarItem;
-			sourceTree = "<group>";
-		};
-		B15BE6521D839CF90014FBF0 /* CategorySupport */ = {
-			isa = PBXGroup;
-			children = (
-				B15BE6531D839CF90014FBF0 /* CAAnimation+WAnimation.h */,
-				B15BE6541D839CF90014FBF0 /* CAAnimation+WAnimation.m */,
-			);
-			path = CategorySupport;
-			sourceTree = "<group>";
-		};
-		B15BE6551D839CF90014FBF0 /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				B15BE6561D839CF90014FBF0 /* WZLBadgeProtocol.h */,
-			);
-			path = Protocol;
-			sourceTree = "<group>";
-		};
-		B15BE6571D839CF90014FBF0 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				B15BE6581D839CF90014FBF0 /* UIView+WZLBadge.h */,
-				B15BE6591D839CF90014FBF0 /* UIView+WZLBadge.m */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		B15BE65F1D839D3E0014FBF0 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				B15BE6601D839D3E0014FBF0 /* UIViewController+KNSemiModal.h */,
-				B15BE6611D839D3E0014FBF0 /* UIViewController+KNSemiModal.m */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		B15BE6681D839D8A0014FBF0 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				B15BE6691D839D950014FBF0 /* ProductTableViewCell.h */,
-				B15BE66A1D839D950014FBF0 /* ProductTableViewCell.m */,
-				B15BE66B1D839D950014FBF0 /* ProductTableViewCell.xib */,
-				B15BE66C1D839D950014FBF0 /* CountTableViewCell.xib */,
-				B15BE67E1D83D8620014FBF0 /* ShoppingCartCell.h */,
-				B15BE67F1D83D8620014FBF0 /* ShoppingCartCell.m */,
-				B15BE6801D83D8620014FBF0 /* ShoppingCartCell.xib */,
-				B15BE6C41D83E4FC0014FBF0 /* BuyerHeaderCell.xib */,
-				B18721171D879A2200ACF759 /* RelatedProductCollectionViewCell.h */,
-				B18721181D879A2200ACF759 /* RelatedProductCollectionViewCell.m */,
-				B18721191D879A2200ACF759 /* RelatedProductCollectionViewCell.xib */,
-				B187211C1D87A13C00ACF759 /* RelatedHeaderCollectionReusableView.h */,
-				B187211D1D87A13C00ACF759 /* RelatedHeaderCollectionReusableView.m */,
-				B187211E1D87A13C00ACF759 /* RelatedHeaderCollectionReusableView.xib */,
-			);
-			name = Cell;
-			sourceTree = "<group>";
-		};
-		B15BE6721D83A6290014FBF0 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				B15BE6731D83A63A0014FBF0 /* MKJRequestHelper.h */,
-				B15BE6741D83A63A0014FBF0 /* MKJRequestHelper.m */,
-				B15BE6761D83A9340014FBF0 /* shoppingCartModel.h */,
-				B15BE6771D83A9340014FBF0 /* shoppingCartModel.m */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		B15BE6131D839A000014FBF0 /* TaoBaoShoppingCart */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B15BE6411D839A010014FBF0 /* Build configuration list for PBXNativeTarget "TaoBaoShoppingCart" */;
-			buildPhases = (
-				45C33D420B592DA2660C9591 /* [CP] Check Pods Manifest.lock */,
-				B15BE6101D839A000014FBF0 /* Sources */,
-				B15BE6111D839A000014FBF0 /* Frameworks */,
-				B15BE6121D839A000014FBF0 /* Resources */,
-				AFEAA6FC8CEC1F5862478E15 /* [CP] Embed Pods Frameworks */,
-				2AA8C5A387FFCDD18265697C /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = TaoBaoShoppingCart;
-			productName = TaoBaoShoppingCart;
-			productReference = B15BE6141D839A000014FBF0 /* TaoBaoShoppingCart.app */;
-			productType = "com.apple.product-type.application";
-		};
-		B15BE62C1D839A000014FBF0 /* TaoBaoShoppingCartTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B15BE6441D839A010014FBF0 /* Build configuration list for PBXNativeTarget "TaoBaoShoppingCartTests" */;
-			buildPhases = (
-				B15BE6291D839A000014FBF0 /* Sources */,
-				B15BE62A1D839A000014FBF0 /* Frameworks */,
-				B15BE62B1D839A000014FBF0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B15BE62F1D839A000014FBF0 /* PBXTargetDependency */,
-			);
-			name = TaoBaoShoppingCartTests;
-			productName = TaoBaoShoppingCartTests;
-			productReference = B15BE62D1D839A000014FBF0 /* TaoBaoShoppingCartTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		B15BE6371D839A010014FBF0 /* TaoBaoShoppingCartUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B15BE6471D839A010014FBF0 /* Build configuration list for PBXNativeTarget "TaoBaoShoppingCartUITests" */;
-			buildPhases = (
-				B15BE6341D839A010014FBF0 /* Sources */,
-				B15BE6351D839A010014FBF0 /* Frameworks */,
-				B15BE6361D839A010014FBF0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B15BE63A1D839A010014FBF0 /* PBXTargetDependency */,
-			);
-			name = TaoBaoShoppingCartUITests;
-			productName = TaoBaoShoppingCartUITests;
-			productReference = B15BE6381D839A010014FBF0 /* TaoBaoShoppingCartUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		B15BE60C1D839A000014FBF0 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = MKJING;
-				TargetAttributes = {
-					B15BE6131D839A000014FBF0 = {
-						CreatedOnToolsVersion = 7.3.1;
-					};
-					B15BE62C1D839A000014FBF0 = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = B15BE6131D839A000014FBF0;
-					};
-					B15BE6371D839A010014FBF0 = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = B15BE6131D839A000014FBF0;
-					};
-				};
-			};
-			buildConfigurationList = B15BE60F1D839A000014FBF0 /* Build configuration list for PBXProject "TaoBaoShoppingCart" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = B15BE60B1D839A000014FBF0;
-			productRefGroup = B15BE6151D839A000014FBF0 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				B15BE6131D839A000014FBF0 /* TaoBaoShoppingCart */,
-				B15BE62C1D839A000014FBF0 /* TaoBaoShoppingCartTests */,
-				B15BE6371D839A010014FBF0 /* TaoBaoShoppingCartUITests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		B15BE6121D839A000014FBF0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B15BE6271D839A000014FBF0 /* LaunchScreen.storyboard in Resources */,
-				B15BE6241D839A000014FBF0 /* Assets.xcassets in Resources */,
-				B15BE66E1D839D950014FBF0 /* ProductTableViewCell.xib in Resources */,
-				B15BE66F1D839D950014FBF0 /* CountTableViewCell.xib in Resources */,
-				B15BE6C61D83E4FC0014FBF0 /* BuyerHeaderCell.xib in Resources */,
-				B15BE6C81D8416B90014FBF0 /* shoppingCart.json in Resources */,
-				B15BE6821D83D8620014FBF0 /* ShoppingCartCell.xib in Resources */,
-				B187211B1D879A2200ACF759 /* RelatedProductCollectionViewCell.xib in Resources */,
-				B15BE6221D839A000014FBF0 /* Main.storyboard in Resources */,
-				B18721221D87A47400ACF759 /* moreRecommand.json in Resources */,
-				B15BE6671D839D840014FBF0 /* ChooseGoodsPropertyViewController.xib in Resources */,
-				B18721201D87A13C00ACF759 /* RelatedHeaderCollectionReusableView.xib in Resources */,
-				B15BE67D1D83ABC60014FBF0 /* MKJShoppingCartViewController.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B15BE62B1D839A000014FBF0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B15BE6361D839A010014FBF0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		2AA8C5A387FFCDD18265697C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TaoBaoShoppingCart/Pods-TaoBaoShoppingCart-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		45C33D420B592DA2660C9591 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		AFEAA6FC8CEC1F5862478E15 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TaoBaoShoppingCart/Pods-TaoBaoShoppingCart-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		B15BE6101D839A000014FBF0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B15BE61F1D839A000014FBF0 /* ViewController.m in Sources */,
-				B15BE6811D83D8620014FBF0 /* ShoppingCartCell.m in Sources */,
-				B15BE6751D83A63A0014FBF0 /* MKJRequestHelper.m in Sources */,
-				B15BE65D1D839CF90014FBF0 /* CAAnimation+WAnimation.m in Sources */,
-				B187211F1D87A13C00ACF759 /* RelatedHeaderCollectionReusableView.m in Sources */,
-				B15BE65E1D839CF90014FBF0 /* UIView+WZLBadge.m in Sources */,
-				B15BE65C1D839CF90014FBF0 /* UITabBarItem+WZLBadge.m in Sources */,
-				B15BE6781D83A9340014FBF0 /* shoppingCartModel.m in Sources */,
-				B15BE61C1D839A000014FBF0 /* AppDelegate.m in Sources */,
-				B187211A1D879A2200ACF759 /* RelatedProductCollectionViewCell.m in Sources */,
-				B15BE6661D839D840014FBF0 /* ChooseGoodsPropertyViewController.m in Sources */,
-				B15BE6621D839D3E0014FBF0 /* UIViewController+KNSemiModal.m in Sources */,
-				B15BE67C1D83ABC60014FBF0 /* MKJShoppingCartViewController.m in Sources */,
-				B15BE65B1D839CF90014FBF0 /* UIBarButtonItem+WZLBadge.m in Sources */,
-				B15BE6191D839A000014FBF0 /* main.m in Sources */,
-				B15BE66D1D839D950014FBF0 /* ProductTableViewCell.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B15BE6291D839A000014FBF0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B15BE6321D839A000014FBF0 /* TaoBaoShoppingCartTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B15BE6341D839A010014FBF0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B15BE63D1D839A010014FBF0 /* TaoBaoShoppingCartUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B15BE62F1D839A000014FBF0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B15BE6131D839A000014FBF0 /* TaoBaoShoppingCart */;
-			targetProxy = B15BE62E1D839A000014FBF0 /* PBXContainerItemProxy */;
-		};
-		B15BE63A1D839A010014FBF0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B15BE6131D839A000014FBF0 /* TaoBaoShoppingCart */;
-			targetProxy = B15BE6391D839A010014FBF0 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		B15BE6201D839A000014FBF0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B15BE6211D839A000014FBF0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B15BE6251D839A000014FBF0 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B15BE6261D839A000014FBF0 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		B15BE63F1D839A010014FBF0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		B15BE6401D839A010014FBF0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		B15BE6421D839A010014FBF0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F3201830543C7A8ECB7BA2B /* Pods-TaoBaoShoppingCart.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = TaoBaoShoppingCart/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mikejing.TaoBaoShoppingCart;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		B15BE6431D839A010014FBF0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3EBE6150C6A86071B158720 /* Pods-TaoBaoShoppingCart.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = TaoBaoShoppingCart/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mikejing.TaoBaoShoppingCart;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		B15BE6451D839A010014FBF0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = TaoBaoShoppingCartTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mikejing.TaoBaoShoppingCartTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaoBaoShoppingCart.app/TaoBaoShoppingCart";
-			};
-			name = Debug;
-		};
-		B15BE6461D839A010014FBF0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = TaoBaoShoppingCartTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mikejing.TaoBaoShoppingCartTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TaoBaoShoppingCart.app/TaoBaoShoppingCart";
-			};
-			name = Release;
-		};
-		B15BE6481D839A010014FBF0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = TaoBaoShoppingCartUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mikejing.TaoBaoShoppingCartUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = TaoBaoShoppingCart;
-			};
-			name = Debug;
-		};
-		B15BE6491D839A010014FBF0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = TaoBaoShoppingCartUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mikejing.TaoBaoShoppingCartUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = TaoBaoShoppingCart;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		B15BE60F1D839A000014FBF0 /* Build configuration list for PBXProject "TaoBaoShoppingCart" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B15BE63F1D839A010014FBF0 /* Debug */,
-				B15BE6401D839A010014FBF0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B15BE6411D839A010014FBF0 /* Build configuration list for PBXNativeTarget "TaoBaoShoppingCart" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B15BE6421D839A010014FBF0 /* Debug */,
-				B15BE6431D839A010014FBF0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B15BE6441D839A010014FBF0 /* Build configuration list for PBXNativeTarget "TaoBaoShoppingCartTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B15BE6451D839A010014FBF0 /* Debug */,
-				B15BE6461D839A010014FBF0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B15BE6471D839A010014FBF0 /* Build configuration list for PBXNativeTarget "TaoBaoShoppingCartUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B15BE6481D839A010014FBF0 /* Debug */,
-				B15BE6491D839A010014FBF0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = B15BE60C1D839A000014FBF0 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>083FE7D6645FAF54725D8AD0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AD81E7E64AE47A5A15B3E160</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2AA8C5A387FFCDD18265697C</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-TaoBaoShoppingCart/Pods-TaoBaoShoppingCart-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>3F45C9378D12DB6F84E804E2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>AD81E7E64AE47A5A15B3E160</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>45C33D420B592DA2660C9591</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [ $? != 0 ] ; then
+    # print error to STDERR
+    echo "error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation." &gt;&amp;2
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>5F3201830543C7A8ECB7BA2B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-TaoBaoShoppingCart.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-TaoBaoShoppingCart/Pods-TaoBaoShoppingCart.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76D8D39ACB0174FD9748B535</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>5F3201830543C7A8ECB7BA2B</string>
+				<string>C3EBE6150C6A86071B158720</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD81E7E64AE47A5A15B3E160</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-TaoBaoShoppingCart.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>AFEAA6FC8CEC1F5862478E15</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-TaoBaoShoppingCart/Pods-TaoBaoShoppingCart-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>B15BE60B1D839A000014FBF0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B15BE6161D839A000014FBF0</string>
+				<string>B15BE6301D839A000014FBF0</string>
+				<string>B15BE63B1D839A010014FBF0</string>
+				<string>B15BE6151D839A000014FBF0</string>
+				<string>76D8D39ACB0174FD9748B535</string>
+				<string>3F45C9378D12DB6F84E804E2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE60C1D839A000014FBF0</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0730</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>MKJING</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>B15BE6131D839A000014FBF0</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.3.1</string>
+					</dict>
+					<key>B15BE62C1D839A000014FBF0</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.3.1</string>
+						<key>TestTargetID</key>
+						<string>B15BE6131D839A000014FBF0</string>
+					</dict>
+					<key>B15BE6371D839A010014FBF0</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>7.3.1</string>
+						<key>TestTargetID</key>
+						<string>B15BE6131D839A000014FBF0</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>B15BE60F1D839A000014FBF0</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>B15BE60B1D839A000014FBF0</string>
+			<key>productRefGroup</key>
+			<string>B15BE6151D839A000014FBF0</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>B15BE6131D839A000014FBF0</string>
+				<string>B15BE62C1D839A000014FBF0</string>
+				<string>B15BE6371D839A010014FBF0</string>
+			</array>
+		</dict>
+		<key>B15BE60F1D839A000014FBF0</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>B15BE63F1D839A010014FBF0</string>
+				<string>B15BE6401D839A010014FBF0</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>B15BE6101D839A000014FBF0</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B15BE61F1D839A000014FBF0</string>
+				<string>B15BE6811D83D8620014FBF0</string>
+				<string>B15BE6751D83A63A0014FBF0</string>
+				<string>B15BE65D1D839CF90014FBF0</string>
+				<string>B187211F1D87A13C00ACF759</string>
+				<string>B15BE65E1D839CF90014FBF0</string>
+				<string>B15BE65C1D839CF90014FBF0</string>
+				<string>B15BE6781D83A9340014FBF0</string>
+				<string>B15BE61C1D839A000014FBF0</string>
+				<string>B187211A1D879A2200ACF759</string>
+				<string>B15BE6661D839D840014FBF0</string>
+				<string>B15BE6621D839D3E0014FBF0</string>
+				<string>B15BE67C1D83ABC60014FBF0</string>
+				<string>B15BE65B1D839CF90014FBF0</string>
+				<string>B15BE6191D839A000014FBF0</string>
+				<string>B15BE66D1D839D950014FBF0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B15BE6111D839A000014FBF0</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>083FE7D6645FAF54725D8AD0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B15BE6121D839A000014FBF0</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B15BE6271D839A000014FBF0</string>
+				<string>B15BE6241D839A000014FBF0</string>
+				<string>B15BE66E1D839D950014FBF0</string>
+				<string>B15BE66F1D839D950014FBF0</string>
+				<string>B15BE6C61D83E4FC0014FBF0</string>
+				<string>B15BE6C81D8416B90014FBF0</string>
+				<string>B15BE6821D83D8620014FBF0</string>
+				<string>B187211B1D879A2200ACF759</string>
+				<string>B15BE6221D839A000014FBF0</string>
+				<string>B18721221D87A47400ACF759</string>
+				<string>B15BE6671D839D840014FBF0</string>
+				<string>B18721201D87A13C00ACF759</string>
+				<string>B15BE67D1D83ABC60014FBF0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B15BE6131D839A000014FBF0</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>B15BE6411D839A010014FBF0</string>
+			<key>buildPhases</key>
+			<array>
+				<string>45C33D420B592DA2660C9591</string>
+				<string>B15BE6101D839A000014FBF0</string>
+				<string>B15BE6111D839A000014FBF0</string>
+				<string>B15BE6121D839A000014FBF0</string>
+				<string>AFEAA6FC8CEC1F5862478E15</string>
+				<string>2AA8C5A387FFCDD18265697C</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>TaoBaoShoppingCart</string>
+			<key>productName</key>
+			<string>TaoBaoShoppingCart</string>
+			<key>productReference</key>
+			<string>B15BE6141D839A000014FBF0</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>B15BE6141D839A000014FBF0</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>TaoBaoShoppingCart.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>B15BE6151D839A000014FBF0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B15BE6141D839A000014FBF0</string>
+				<string>B15BE62D1D839A000014FBF0</string>
+				<string>B15BE6381D839A010014FBF0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE6161D839A000014FBF0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B15BE6721D83A6290014FBF0</string>
+				<string>B15BE6681D839D8A0014FBF0</string>
+				<string>B15BE64B1D839CE50014FBF0</string>
+				<string>B15BE64A1D839C160014FBF0</string>
+				<string>B15BE61A1D839A000014FBF0</string>
+				<string>B15BE61B1D839A000014FBF0</string>
+				<string>B15BE6171D839A000014FBF0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>TaoBaoShoppingCart</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE6171D839A000014FBF0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B18721211D87A47400ACF759</string>
+				<string>B15BE6C71D8416B90014FBF0</string>
+				<string>B15BE6231D839A000014FBF0</string>
+				<string>B15BE6251D839A000014FBF0</string>
+				<string>B15BE6281D839A000014FBF0</string>
+				<string>B15BE6181D839A000014FBF0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE6181D839A000014FBF0</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE6191D839A000014FBF0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B15BE6181D839A000014FBF0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B15BE61A1D839A000014FBF0</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE61B1D839A000014FBF0</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE61C1D839A000014FBF0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B15BE61B1D839A000014FBF0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B15BE61D1D839A000014FBF0</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE61E1D839A000014FBF0</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE61F1D839A000014FBF0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B15BE61E1D839A000014FBF0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B15BE6201D839A000014FBF0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B15BE6211D839A000014FBF0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE6211D839A000014FBF0</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE6221D839A000014FBF0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B15BE6201D839A000014FBF0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B15BE6231D839A000014FBF0</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Assets.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE6241D839A000014FBF0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B15BE6231D839A000014FBF0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B15BE6251D839A000014FBF0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B15BE6261D839A000014FBF0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE6261D839A000014FBF0</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE6271D839A000014FBF0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B15BE6251D839A000014FBF0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B15BE6281D839A000014FBF0</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE6291D839A000014FBF0</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B15BE6321D839A000014FBF0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B15BE62A1D839A000014FBF0</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B15BE62B1D839A000014FBF0</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B15BE62C1D839A000014FBF0</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>B15BE6441D839A010014FBF0</string>
+			<key>buildPhases</key>
+			<array>
+				<string>B15BE6291D839A000014FBF0</string>
+				<string>B15BE62A1D839A000014FBF0</string>
+				<string>B15BE62B1D839A000014FBF0</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>B15BE62F1D839A000014FBF0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>TaoBaoShoppingCartTests</string>
+			<key>productName</key>
+			<string>TaoBaoShoppingCartTests</string>
+			<key>productReference</key>
+			<string>B15BE62D1D839A000014FBF0</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>B15BE62D1D839A000014FBF0</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>TaoBaoShoppingCartTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>B15BE62E1D839A000014FBF0</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>B15BE60C1D839A000014FBF0</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>B15BE6131D839A000014FBF0</string>
+			<key>remoteInfo</key>
+			<string>TaoBaoShoppingCart</string>
+		</dict>
+		<key>B15BE62F1D839A000014FBF0</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>B15BE6131D839A000014FBF0</string>
+			<key>targetProxy</key>
+			<string>B15BE62E1D839A000014FBF0</string>
+		</dict>
+		<key>B15BE6301D839A000014FBF0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B15BE6311D839A000014FBF0</string>
+				<string>B15BE6331D839A000014FBF0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>TaoBaoShoppingCartTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE6311D839A000014FBF0</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TaoBaoShoppingCartTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE6321D839A000014FBF0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B15BE6311D839A000014FBF0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B15BE6331D839A000014FBF0</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE6341D839A010014FBF0</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B15BE63D1D839A010014FBF0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B15BE6351D839A010014FBF0</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B15BE6361D839A010014FBF0</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B15BE6371D839A010014FBF0</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>B15BE6471D839A010014FBF0</string>
+			<key>buildPhases</key>
+			<array>
+				<string>B15BE6341D839A010014FBF0</string>
+				<string>B15BE6351D839A010014FBF0</string>
+				<string>B15BE6361D839A010014FBF0</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>B15BE63A1D839A010014FBF0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>TaoBaoShoppingCartUITests</string>
+			<key>productName</key>
+			<string>TaoBaoShoppingCartUITests</string>
+			<key>productReference</key>
+			<string>B15BE6381D839A010014FBF0</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.ui-testing</string>
+		</dict>
+		<key>B15BE6381D839A010014FBF0</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>TaoBaoShoppingCartUITests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>B15BE6391D839A010014FBF0</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>B15BE60C1D839A000014FBF0</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>B15BE6131D839A000014FBF0</string>
+			<key>remoteInfo</key>
+			<string>TaoBaoShoppingCart</string>
+		</dict>
+		<key>B15BE63A1D839A010014FBF0</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>B15BE6131D839A000014FBF0</string>
+			<key>targetProxy</key>
+			<string>B15BE6391D839A010014FBF0</string>
+		</dict>
+		<key>B15BE63B1D839A010014FBF0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B15BE63C1D839A010014FBF0</string>
+				<string>B15BE63E1D839A010014FBF0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>TaoBaoShoppingCartUITests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE63C1D839A010014FBF0</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TaoBaoShoppingCartUITests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE63D1D839A010014FBF0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B15BE63C1D839A010014FBF0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B15BE63E1D839A010014FBF0</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE63F1D839A010014FBF0</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>ENABLE_TESTABILITY</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>B15BE6401D839A010014FBF0</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_ANALYZER_NONNULL</key>
+				<string>YES</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_NO_COMMON_BLOCKS</key>
+				<string>YES</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.3</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>B15BE6411D839A010014FBF0</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>B15BE6421D839A010014FBF0</string>
+				<string>B15BE6431D839A010014FBF0</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>B15BE6421D839A010014FBF0</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>5F3201830543C7A8ECB7BA2B</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>INFOPLIST_FILE</key>
+				<string>TaoBaoShoppingCart/Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>mikejing.TaoBaoShoppingCart</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>B15BE6431D839A010014FBF0</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>C3EBE6150C6A86071B158720</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>INFOPLIST_FILE</key>
+				<string>TaoBaoShoppingCart/Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>9.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>mikejing.TaoBaoShoppingCart</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>B15BE6441D839A010014FBF0</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>B15BE6451D839A010014FBF0</string>
+				<string>B15BE6461D839A010014FBF0</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>B15BE6451D839A010014FBF0</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>INFOPLIST_FILE</key>
+				<string>TaoBaoShoppingCartTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>mikejing.TaoBaoShoppingCartTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/TaoBaoShoppingCart.app/TaoBaoShoppingCart</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>B15BE6461D839A010014FBF0</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>INFOPLIST_FILE</key>
+				<string>TaoBaoShoppingCartTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>mikejing.TaoBaoShoppingCartTests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/TaoBaoShoppingCart.app/TaoBaoShoppingCart</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>B15BE6471D839A010014FBF0</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>B15BE6481D839A010014FBF0</string>
+				<string>B15BE6491D839A010014FBF0</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>B15BE6481D839A010014FBF0</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>INFOPLIST_FILE</key>
+				<string>TaoBaoShoppingCartUITests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>mikejing.TaoBaoShoppingCartUITests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_TARGET_NAME</key>
+				<string>TaoBaoShoppingCart</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>B15BE6491D839A010014FBF0</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>INFOPLIST_FILE</key>
+				<string>TaoBaoShoppingCartUITests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>mikejing.TaoBaoShoppingCartUITests</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_TARGET_NAME</key>
+				<string>TaoBaoShoppingCart</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>B15BE64A1D839C160014FBF0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B15BE6791D83ABC60014FBF0</string>
+				<string>B15BE67A1D83ABC60014FBF0</string>
+				<string>B15BE67B1D83ABC60014FBF0</string>
+				<string>B15BE6631D839D840014FBF0</string>
+				<string>B15BE6641D839D840014FBF0</string>
+				<string>B15BE6651D839D840014FBF0</string>
+				<string>B15BE61D1D839A000014FBF0</string>
+				<string>B15BE61E1D839A000014FBF0</string>
+				<string>B15BE6201D839A000014FBF0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>VC</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE64B1D839CE50014FBF0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B15BE65F1D839D3E0014FBF0</string>
+				<string>B15BE64C1D839CF90014FBF0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>tools</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE64C1D839CF90014FBF0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B15BE64D1D839CF90014FBF0</string>
+				<string>B15BE6521D839CF90014FBF0</string>
+				<string>B15BE6551D839CF90014FBF0</string>
+				<string>B15BE6571D839CF90014FBF0</string>
+				<string>B15BE65A1D839CF90014FBF0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>WZLBadge</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE64D1D839CF90014FBF0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B15BE64E1D839CF90014FBF0</string>
+				<string>B15BE64F1D839CF90014FBF0</string>
+				<string>B15BE6501D839CF90014FBF0</string>
+				<string>B15BE6511D839CF90014FBF0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>BarItem</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE64E1D839CF90014FBF0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>UIBarButtonItem+WZLBadge.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE64F1D839CF90014FBF0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>UIBarButtonItem+WZLBadge.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE6501D839CF90014FBF0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>UITabBarItem+WZLBadge.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE6511D839CF90014FBF0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>UITabBarItem+WZLBadge.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE6521D839CF90014FBF0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B15BE6531D839CF90014FBF0</string>
+				<string>B15BE6541D839CF90014FBF0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>CategorySupport</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE6531D839CF90014FBF0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>CAAnimation+WAnimation.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE6541D839CF90014FBF0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>CAAnimation+WAnimation.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE6551D839CF90014FBF0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B15BE6561D839CF90014FBF0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Protocol</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE6561D839CF90014FBF0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>WZLBadgeProtocol.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE6571D839CF90014FBF0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B15BE6581D839CF90014FBF0</string>
+				<string>B15BE6591D839CF90014FBF0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>View</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE6581D839CF90014FBF0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>UIView+WZLBadge.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE6591D839CF90014FBF0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>UIView+WZLBadge.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE65A1D839CF90014FBF0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>WZLBadgeImport.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE65B1D839CF90014FBF0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B15BE64F1D839CF90014FBF0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B15BE65C1D839CF90014FBF0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B15BE6511D839CF90014FBF0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B15BE65D1D839CF90014FBF0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B15BE6541D839CF90014FBF0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B15BE65E1D839CF90014FBF0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B15BE6591D839CF90014FBF0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B15BE65F1D839D3E0014FBF0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B15BE6601D839D3E0014FBF0</string>
+				<string>B15BE6611D839D3E0014FBF0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Source</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE6601D839D3E0014FBF0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>UIViewController+KNSemiModal.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE6611D839D3E0014FBF0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>UIViewController+KNSemiModal.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE6621D839D3E0014FBF0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B15BE6611D839D3E0014FBF0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B15BE6631D839D840014FBF0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ChooseGoodsPropertyViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE6641D839D840014FBF0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ChooseGoodsPropertyViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE6651D839D840014FBF0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>ChooseGoodsPropertyViewController.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE6661D839D840014FBF0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B15BE6641D839D840014FBF0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B15BE6671D839D840014FBF0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B15BE6651D839D840014FBF0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B15BE6681D839D8A0014FBF0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B15BE6691D839D950014FBF0</string>
+				<string>B15BE66A1D839D950014FBF0</string>
+				<string>B15BE66B1D839D950014FBF0</string>
+				<string>B15BE66C1D839D950014FBF0</string>
+				<string>B15BE67E1D83D8620014FBF0</string>
+				<string>B15BE67F1D83D8620014FBF0</string>
+				<string>B15BE6801D83D8620014FBF0</string>
+				<string>B15BE6C41D83E4FC0014FBF0</string>
+				<string>B18721171D879A2200ACF759</string>
+				<string>B18721181D879A2200ACF759</string>
+				<string>B18721191D879A2200ACF759</string>
+				<string>B187211C1D87A13C00ACF759</string>
+				<string>B187211D1D87A13C00ACF759</string>
+				<string>B187211E1D87A13C00ACF759</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Cell</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE6691D839D950014FBF0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ProductTableViewCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE66A1D839D950014FBF0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ProductTableViewCell.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE66B1D839D950014FBF0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>ProductTableViewCell.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE66C1D839D950014FBF0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>CountTableViewCell.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE66D1D839D950014FBF0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B15BE66A1D839D950014FBF0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B15BE66E1D839D950014FBF0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B15BE66B1D839D950014FBF0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B15BE66F1D839D950014FBF0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B15BE66C1D839D950014FBF0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B15BE6721D83A6290014FBF0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B15BE6731D83A63A0014FBF0</string>
+				<string>B15BE6741D83A63A0014FBF0</string>
+				<string>B15BE6761D83A9340014FBF0</string>
+				<string>B15BE6771D83A9340014FBF0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Model</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE6731D83A63A0014FBF0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MKJRequestHelper.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE6741D83A63A0014FBF0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>MKJRequestHelper.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE6751D83A63A0014FBF0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B15BE6741D83A63A0014FBF0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B15BE6761D83A9340014FBF0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>shoppingCartModel.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE6771D83A9340014FBF0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>shoppingCartModel.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE6781D83A9340014FBF0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B15BE6771D83A9340014FBF0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B15BE6791D83ABC60014FBF0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>MKJShoppingCartViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE67A1D83ABC60014FBF0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>MKJShoppingCartViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE67B1D83ABC60014FBF0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>MKJShoppingCartViewController.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE67C1D83ABC60014FBF0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B15BE67A1D83ABC60014FBF0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B15BE67D1D83ABC60014FBF0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B15BE67B1D83ABC60014FBF0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B15BE67E1D83D8620014FBF0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ShoppingCartCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE67F1D83D8620014FBF0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ShoppingCartCell.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE6801D83D8620014FBF0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>ShoppingCartCell.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE6811D83D8620014FBF0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B15BE67F1D83D8620014FBF0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B15BE6821D83D8620014FBF0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B15BE6801D83D8620014FBF0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B15BE6C41D83E4FC0014FBF0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>BuyerHeaderCell.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE6C61D83E4FC0014FBF0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B15BE6C41D83E4FC0014FBF0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B15BE6C71D8416B90014FBF0</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.json</string>
+			<key>path</key>
+			<string>shoppingCart.json</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B15BE6C81D8416B90014FBF0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B15BE6C71D8416B90014FBF0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B18721171D879A2200ACF759</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>RelatedProductCollectionViewCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B18721181D879A2200ACF759</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>RelatedProductCollectionViewCell.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B18721191D879A2200ACF759</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>RelatedProductCollectionViewCell.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B187211A1D879A2200ACF759</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B18721181D879A2200ACF759</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B187211B1D879A2200ACF759</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B18721191D879A2200ACF759</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B187211C1D87A13C00ACF759</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>RelatedHeaderCollectionReusableView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B187211D1D87A13C00ACF759</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>RelatedHeaderCollectionReusableView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B187211E1D87A13C00ACF759</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>RelatedHeaderCollectionReusableView.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B187211F1D87A13C00ACF759</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B187211D1D87A13C00ACF759</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B18721201D87A13C00ACF759</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B187211E1D87A13C00ACF759</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B18721211D87A47400ACF759</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.json</string>
+			<key>path</key>
+			<string>moreRecommand.json</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B18721221D87A47400ACF759</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B18721211D87A47400ACF759</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C3EBE6150C6A86071B158720</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-TaoBaoShoppingCart.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-TaoBaoShoppingCart/Pods-TaoBaoShoppingCart.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>B15BE60C1D839A000014FBF0</string>
+</dict>
+</plist>
